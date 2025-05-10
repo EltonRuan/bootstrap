@@ -163,3 +163,5 @@
 ## LAYOUT BREAKS ON SMALL SCREENS
 
 ## FINAL CONSIDERATIONS
+
+<footer align="center"> <img style="width:100%" src="https://capsule-render.vercel.app/api?type=soft&height=20&color=FFFFFF&fontSize=50&fontAlign=50&strokeWidth=0&descAlignY=80&stroke=000000&reversal=false&section=footer"> </footer>
