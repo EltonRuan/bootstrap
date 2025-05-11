@@ -62,6 +62,25 @@
 
 ## ABOUT THIS GUIDE
 
+<p>This guide was created to serve as a complete and practical manual for developers of all levels who want to master <strong>Bootstrap</strong>, one of the most widely used front-end frameworks in the world.</p>
+
+<p>Whether you're just starting out in web development or are an experienced professional, this guide provides a structured, hands-on approach to building responsive, modern, and visually appealing websites using Bootstrap.</p>
+
+<p>You'll find instructions on how to install and configure Bootstrap, explore its grid system, components, utilities, and learn best practices to optimize performance and maintain code readability. We'll also cover custom themes, troubleshooting tips, and real-world implementation examples.</p>
+
+<p>By the end of this guide, you will be able to:</p>
+
+<ul>
+  <li>Understand what Bootstrap is and how it works.</li>
+  <li>Set up Bootstrap using CDN, local files, or npm.</li>
+  <li>Utilize the grid system and layout tools effectively.</li>
+  <li>Style your projects using Bootstrap’s built-in components and utilities.</li>
+  <li>Customize Bootstrap themes using Sass.</li>
+  <li>Implement responsive design principles easily.</li>
+  <li>Troubleshoot common layout and rendering issues.</li>
+  <li>Build professional and scalable web interfaces faster.</li>
+</ul>
+
 ## WHAT IS BOOTSTRAP?
 
 ## WHY CHOOSE BOOTSTRAP FOR WEB DEVELOPMENT?
