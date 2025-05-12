@@ -83,6 +83,23 @@
 
 ## WHAT IS BOOTSTRAP?
 
+<p><strong>Bootstrap</strong> is a popular open-source front-end framework originally developed by Twitter. It provides developers with a collection of pre-designed components, responsive grid systems, and utility classes to quickly and efficiently build modern, mobile-first web interfaces.</p>
+
+<p>Its goal is to simplify the process of creating visually appealing and fully responsive web applications without having to write extensive custom CSS from scratch. Whether you're building a personal website, a product landing page, or a full dashboard interface, Bootstrap offers the tools to do it faster and more consistently.</p>
+
+<p>Some key characteristics of Bootstrap include:</p>
+
+<ul>
+  <li>Mobile-first approach</li>
+  <li>Pre-built responsive grid system</li>
+  <li>Components like buttons, navbars, cards, modals, etc.</li>
+  <li>Utility classes for margin, padding, colors, and typography</li>
+  <li>Easily customizable with Sass variables and built-in themes</li>
+  <li>Compatibility with all modern browsers</li>
+</ul>
+
+<p>Bootstrap is ideal for both beginners and experienced developers who want to streamline their UI development process.</p>
+
 ## WHY CHOOSE BOOTSTRAP FOR WEB DEVELOPMENT?
 
 ## BOOTSTRAP VS OTHER FRAMEWORKS
