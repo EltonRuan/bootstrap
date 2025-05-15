@@ -144,6 +144,41 @@
 
 ## INSTALLING BOOTSTRAP (CDN, LOCAL, AND NPM)
 
+<p>There are multiple ways to install and use Bootstrap in your web projects, depending on your setup and preferences. Below are the most common methods:</p>
+
+<h3>1. CDN (Content Delivery Network)</h3>
+<p>This is the quickest and easiest way to get started with Bootstrap. Simply add the following lines to your HTML file:</p>
+
+<pre><code>&lt;!-- Bootstrap CSS --&gt;
+&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+
+&lt;!-- Bootstrap JS (with Popper) --&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<h3>2. Local Installation</h3>
+<p>If you prefer to keep all dependencies locally, download Bootstrap from the official website and include the CSS and JS files:</p>
+
+<pre><code>&lt;link rel="stylesheet" href="path/to/bootstrap.min.css"&gt;
+&lt;script src="path/to/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<h3>3. NPM (Node Package Manager)</h3>
+<p>If you're using a build system like Webpack, Vite, or Parcel, you can install Bootstrap via NPM:</p>
+
+<pre><code>npm install bootstrap</code></pre>
+
+<p>Then, import Bootstrap into your JavaScript or SCSS files:</p>
+
+<pre><code>// JavaScript
+import 'bootstrap';
+
+// SCSS
+@import "bootstrap/scss/bootstrap";
+</code></pre>
+
+<p><strong>Note:</strong> When using the NPM method, make sure you configure your bundler to compile SCSS or bundle the required JS correctly.</p>
+
 ## LINKING BOOTSTRAP WITH HTML
 
 ## USING BOOTSTRAP WITH VITE, WEBPACK, OR LARAVEL
