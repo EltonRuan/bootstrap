@@ -157,7 +157,7 @@
 </code></pre>
 
 <h3>2. Local Installation</h3>
-<p>If you prefer to keep all dependencies locally, download Bootstrap from the official website and include the CSS and JS files:</p>
+<p>If you prefer to keep all dependencies locally, download Bootstrap from the official website ( https://getbootstrap.com/docs/5.3/getting-started/download/ ) and include the CSS and JS files:</p>
 
 <pre><code>&lt;link rel="stylesheet" href="path/to/bootstrap.min.css"&gt;
 &lt;script src="path/to/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
