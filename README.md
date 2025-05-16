@@ -10,6 +10,7 @@
     <a href="#why-choose-bootstrap-for-web-development">WHY CHOOSE BOOTSTRAP FOR WEB DEVELOPMENT?</a> |
     <a href="#bootstrap-vs-other-frameworks">BOOTSTRAP VS OTHER FRAMEWORKS</a> |
     <a href="#installing-bootstrap-cdn-local-and-npm">INSTALLING BOOTSTRAP (CDN, LOCAL, AND NPM)</a> |
+    <a href="#bootstrap-file-structure">BOOTSTRAP FILE STRUCTURE</a> |
     <a href="#linking-bootstrap-with-html">LINKING BOOTSTRAP WITH HTML</a> |
     <a href="#using-bootstrap-with-vite-webpack-or-laravel">USING BOOTSTRAP WITH VITE, WEBPACK, OR LARAVEL</a> |
     <a href="#bootstrap-grid-system">BOOTSTRAP GRID SYSTEM</a> |
@@ -178,6 +179,77 @@ import 'bootstrap';
 </code></pre>
 
 <p><strong>Note:</strong> When using the NPM method, make sure you configure your bundler to compile SCSS or bundle the required JS correctly.</p>
+
+<h2 id="bootstrap-file-structure">BOOTSTRAP FILE STRUCTURE</h2>
+
+<p>When you download Bootstrap locally, the extracted folder typically contains two main directories: <code>css/</code> and <code>js/</code>. These folders include various versions of compiled CSS and JavaScript files, both minified and unminified, as well as source maps and RTL (right-to-left) support files.</p>
+
+<h3>Directory Overview:</h3>
+
+<pre><code>bootstrap/
+├── css/
+│   ├── bootstrap.css
+│   ├── bootstrap.css.map
+│   ├── bootstrap.min.css
+│   ├── bootstrap.min.css.map
+│   ├── bootstrap.rtl.css
+│   ├── bootstrap.rtl.css.map
+│   ├── bootstrap.rtl.min.css
+│   ├── bootstrap.rtl.min.css.map
+│   ├── bootstrap-grid.css
+│   ├── bootstrap-grid.css.map
+│   ├── bootstrap-grid.min.css
+│   ├── bootstrap-grid.min.css.map
+│   ├── bootstrap-grid.rtl.css
+│   ├── bootstrap-grid.rtl.css.map
+│   ├── bootstrap-grid.rtl.min.css
+│   ├── bootstrap-grid.rtl.min.css.map
+│   ├── bootstrap-reboot.css
+│   ├── bootstrap-reboot.css.map
+│   ├── bootstrap-reboot.min.css
+│   ├── bootstrap-reboot.min.css.map
+│   ├── bootstrap-reboot.rtl.css
+│   ├── bootstrap-reboot.rtl.css.map
+│   ├── bootstrap-reboot.rtl.min.css
+│   ├── bootstrap-reboot.rtl.min.css.map
+│   ├── bootstrap-utilities.css
+│   ├── bootstrap-utilities.css.map
+│   ├── bootstrap-utilities.min.css
+│   ├── bootstrap-utilities.min.css.map
+│   ├── bootstrap-utilities.rtl.css
+│   ├── bootstrap-utilities.rtl.css.map
+│   ├── bootstrap-utilities.rtl.min.css
+│   └── bootstrap-utilities.rtl.min.css.map
+└── js/
+    ├── bootstrap.bundle.js
+    ├── bootstrap.bundle.js.map
+    ├── bootstrap.bundle.min.js
+    ├── bootstrap.bundle.min.js.map
+    ├── bootstrap.esm.js
+    ├── bootstrap.esm.js.map
+    ├── bootstrap.esm.min.js
+    ├── bootstrap.esm.min.js.map
+    ├── bootstrap.js
+    ├── bootstrap.js.map
+    ├── bootstrap.min.js
+    └── bootstrap.min.js.map
+</code></pre>
+
+<h3>Description of Key Files:</h3>
+
+<ul>
+  <li><strong>bootstrap.css / bootstrap.min.css</strong>: The core Bootstrap CSS (normal and minified).</li>
+  <li><strong>bootstrap.rtl.css</strong>: CSS with support for right-to-left languages.</li>
+  <li><strong>bootstrap-grid.css</strong>: Grid system only, useful if you don’t need the full Bootstrap bundle.</li>
+  <li><strong>bootstrap-reboot.css</strong>: Resets and normalizes styles across browsers.</li>
+  <li><strong>bootstrap-utilities.css</strong>: Contains Bootstrap’s utility classes only.</li>
+  <li><strong>.map files</strong>: Source maps for debugging and development tools.</li>
+  <li><strong>bootstrap.bundle.js</strong>: Includes Bootstrap’s JavaScript and Popper (necessary for dropdowns, tooltips, etc).</li>
+  <li><strong>bootstrap.esm.js</strong>: JavaScript in ECMAScript module format for modern bundlers.</li>
+  <li><strong>bootstrap.js</strong>: The standard JavaScript without dependencies bundled.</li>
+</ul>
+
+<p>This file structure offers flexibility to only include what your project really needs, helping reduce load times and improving maintainability.</p>
 
 ## LINKING BOOTSTRAP WITH HTML
 
