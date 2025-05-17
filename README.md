@@ -253,6 +253,42 @@ import 'bootstrap';
 
 ## LINKING BOOTSTRAP WITH HTML
 
+<p>To start using Bootstrap in your web projects, you need to link the Bootstrap CSS and JavaScript files within your HTML documents. There are multiple ways to do this, including using a CDN (Content Delivery Network) or hosting the files locally.</p>
+
+<h3>1. Using Bootstrap via CDN</h3>
+<p>Linking via CDN is the fastest and easiest way to get started without downloading any files. Simply add the following <code>&lt;link&gt;</code> and <code>&lt;script&gt;</code> tags inside the <code>&lt;head&gt;</code> and before the closing <code>&lt;/body&gt;</code> tag respectively:</p>
+
+<pre><code>&lt;!-- Bootstrap CSS --&gt;
+&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-..." crossorigin="anonymous"&gt;
+
+&lt;!-- Bootstrap JS Bundle (includes Popper) --&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"&gt;&lt;/script&gt;
+</code></pre>
+
+<p>Make sure to replace the version number (here, <code>5.3.0</code>) with the latest stable version.</p>
+
+<h3>2. Using Bootstrap Locally</h3>
+<p>If you prefer to download Bootstrap and serve the files from your own server or project folder, link the CSS and JS files like this:</p>
+
+<pre><code>&lt;!-- Bootstrap CSS --&gt;
+&lt;link href="path/to/bootstrap/css/bootstrap.min.css" rel="stylesheet"&gt;
+
+&lt;!-- Bootstrap JS Bundle --&gt;
+&lt;script src="path/to/bootstrap/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<p>Replace <code>path/to/bootstrap/</code> with the actual path to where you placed the Bootstrap files.</p>
+
+<h3>3. Important Notes</h3>
+<ul>
+  <li>Always include the Bootstrap CSS file in the <code>&lt;head&gt;</code> section so the styles load before the content is rendered.</li>
+  <li>Place the Bootstrap JS bundle right before the closing <code>&lt;/body&gt;</code> tag to improve page load speed.</li>
+  <li>The Bootstrap JS bundle includes Popper.js, which is required for tooltips, popovers, and dropdowns.</li>
+  <li>If you need to customize Bootstrap extensively, consider using the source SCSS files and compiling them yourself.</li>
+</ul>
+
+<p>Once linked, you can start using Bootstrap's classes and components right away in your HTML!</p>
+
 ## USING BOOTSTRAP WITH VITE, WEBPACK, OR LARAVEL
 
 ## BOOTSTRAP GRID SYSTEM
