@@ -291,6 +291,58 @@ import 'bootstrap';
 
 ## USING BOOTSTRAP WITH VITE, WEBPACK, OR LARAVEL
 
+<p>For modern development workflows and larger applications, it's common to use build tools like <strong>Vite</strong>, <strong>Webpack</strong>, or full-stack frameworks like <strong>Laravel</strong> (which often includes Vite by default). Below is how you can integrate Bootstrap with each of these tools efficiently.</p>
+
+<h3>Vite</h3>
+<ol>
+  <li>Install Bootstrap via NPM:
+    <pre><code>npm install bootstrap</code></pre>
+  </li>
+  <li>Import Bootstrap into your main JavaScript or SCSS file:
+    <pre><code>// main.js
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';</code></pre>
+  </li>
+  <li>Start your development server:
+    <pre><code>npm run dev</code></pre>
+  </li>
+</ol>
+
+<h3>Webpack</h3>
+<ol>
+  <li>Install Bootstrap and dependencies:
+    <pre><code>npm install bootstrap</code></pre>
+  </li>
+  <li>Include Bootstrap in your entry file:
+    <pre><code>// index.js
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';</code></pre>
+  </li>
+  <li>Make sure your Webpack config handles CSS and JS bundling correctly.</li>
+</ol>
+
+<h3>Laravel (with Vite)</h3>
+<ol>
+  <li>Install Bootstrap:
+    <pre><code>npm install bootstrap</code></pre>
+  </li>
+  <li>Edit <code>resources/js/app.js</code> to include:
+    <pre><code>import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';</code></pre>
+  </li>
+  <li>Edit <code>vite.config.js</code> if necessary (Laravel 10+ usually has it preconfigured).</li>
+  <li>Compile assets:
+    <pre><code>npm run dev</code></pre>
+  </li>
+</ol>
+
+<h3>Pro Tips</h3>
+<ul>
+  <li>Always restart the dev server after changing configuration files.</li>
+  <li>Using SCSS? Import <code>bootstrap/scss/bootstrap.scss</code> instead and customize variables before compiling.</li>
+  <li>Use <code>@import</code> or <code>require()</code> based on your bundler's support.</li>
+</ul>
+
 ## BOOTSTRAP GRID SYSTEM
 
 ## BREAKPOINTS AND RESPONSIVE DESIGN
