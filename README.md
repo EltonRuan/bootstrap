@@ -345,6 +345,68 @@ import 'bootstrap';</code></pre>
 
 ## BOOTSTRAP GRID SYSTEM
 
+<p>The <strong>Bootstrap Grid System</strong> is a powerful and flexible way to create responsive layouts. It’s based on a 12-column system and uses containers, rows, and columns to align content across various screen sizes and devices.</p>
+
+<h3>Key Concepts</h3>
+<ul>
+  <li><strong>Container</strong>: Wraps the content and provides horizontal padding. Use <code>.container</code> or <code>.container-fluid</code>.</li>
+  <li><strong>Row</strong>: Used to create a horizontal group of columns.</li>
+  <li><strong>Columns</strong>: Use <code>.col</code>, <code>.col-*</code>, or responsive variations like <code>.col-md-6</code>.</li>
+</ul>
+
+<h3>12-Column System</h3>
+<p>The grid divides the screen into 12 columns. You can combine columns to span the width you need. For example:</p>
+
+<pre><code>
+&lt;div class="container"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-6"&gt;Column 1 (6/12)&lt;/div&gt;
+    &lt;div class="col-6"&gt;Column 2 (6/12)&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Responsive Breakpoints</h3>
+<p>Bootstrap includes classes for different device sizes:</p>
+<ul>
+  <li><code>.col-sm-*</code>: ≥576px</li>
+  <li><code>.col-md-*</code>: ≥768px</li>
+  <li><code>.col-lg-*</code>: ≥992px</li>
+  <li><code>.col-xl-*</code>: ≥1200px</li>
+  <li><code>.col-xxl-*</code>: ≥1400px</li>
+</ul>
+
+<h3>Auto Layout Columns</h3>
+<p>Let columns automatically adjust to fit their content or space:</p>
+
+<pre><code>
+&lt;div class="row"&gt;
+  &lt;div class="col"&gt;Auto 1&lt;/div&gt;
+  &lt;div class="col"&gt;Auto 2&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Nesting</h3>
+<p>You can nest rows and columns for complex layouts:</p>
+
+<pre><code>
+&lt;div class="row"&gt;
+  &lt;div class="col-8"&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-6"&gt;Nested 1&lt;/div&gt;
+      &lt;div class="col-6"&gt;Nested 2&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Tips</h3>
+<ul>
+  <li>Use <code>.g-*</code> classes for spacing between columns (gutter).</li>
+  <li>Combine different breakpoint classes for adaptive designs.</li>
+  <li>Always wrap columns inside a row to avoid unexpected behavior.</li>
+</ul>
+
 ## BREAKPOINTS AND RESPONSIVE DESIGN
 
 ## CONTAINERS, ROWS, AND COLUMNS
