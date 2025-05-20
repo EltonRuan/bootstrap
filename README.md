@@ -409,6 +409,84 @@ import 'bootstrap';</code></pre>
 
 ## BREAKPOINTS AND RESPONSIVE DESIGN
 
+<p>
+  Bootstrap is built with a mobile-first approach and provides predefined <strong>breakpoints</strong> that make it easy to build responsive web layouts. These breakpoints allow you to apply different styles depending on the screen size of the user’s device.
+</p>
+
+<h3>Default Breakpoints</h3>
+<p>Bootstrap includes the following responsive breakpoints:</p>
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Breakpoint</th>
+      <th>Class Prefix</th>
+      <th>Dimensions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Extra small</td>
+      <td><code>none</code></td>
+      <td>&lt; 576px</td>
+    </tr>
+    <tr>
+      <td>Small</td>
+      <td><code>sm</code></td>
+      <td>≥ 576px</td>
+    </tr>
+    <tr>
+      <td>Medium</td>
+      <td><code>md</code></td>
+      <td>≥ 768px</td>
+    </tr>
+    <tr>
+      <td>Large</td>
+      <td><code>lg</code></td>
+      <td>≥ 992px</td>
+    </tr>
+    <tr>
+      <td>Extra Large</td>
+      <td><code>xl</code></td>
+      <td>≥ 1200px</td>
+    </tr>
+    <tr>
+      <td>Extra Extra Large</td>
+      <td><code>xxl</code></td>
+      <td>≥ 1400px</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>How to Use Breakpoints</h3>
+<p>
+  Combine breakpoint prefixes with utilities and grid classes. For example:
+</p>
+
+<pre><code>
+&lt;div class="d-none d-md-block"&gt;
+  This content is hidden on small screens and visible on medium and larger.
+&lt;/div&gt;
+
+&lt;div class="col-12 col-sm-6 col-lg-4"&gt;
+  Responsive column that adjusts width based on screen size.
+&lt;/div&gt;
+</code></pre>
+
+<h3>Responsive Utility Classes</h3>
+<p>Bootstrap provides many responsive utility classes, such as:</p>
+<ul>
+  <li><code>.d-none</code>, <code>.d-sm-block</code> (Display utilities)</li>
+  <li><code>.text-center</code>, <code>.text-md-start</code> (Text alignment)</li>
+  <li><code>.m-0</code>, <code>.p-lg-5</code> (Spacing utilities)</li>
+</ul>
+
+<h3>Best Practices</h3>
+<ul>
+  <li>Start with mobile styles, then add enhancements for larger screens using breakpoints.</li>
+  <li>Use containers and grid classes wisely to create fluid and adaptable layouts.</li>
+  <li>Test your design on multiple devices or with browser developer tools.</li>
+</ul>
+
 ## CONTAINERS, ROWS, AND COLUMNS
 
 ## FLEXBOX IN BOOTSTRAP
