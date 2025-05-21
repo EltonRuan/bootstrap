@@ -489,6 +489,66 @@ import 'bootstrap';</code></pre>
 
 ## CONTAINERS, ROWS, AND COLUMNS
 
+<p>
+  The foundation of the Bootstrap grid system is built on three key elements: <strong>containers</strong>, <strong>rows</strong>, and <strong>columns</strong>. Understanding how these elements work together is essential for building responsive layouts.
+</p>
+
+<h3>1. Containers</h3>
+<p>
+  Containers are used to wrap the site content and provide proper alignment and padding. Bootstrap provides two types:
+</p>
+<ul>
+  <li><code>.container</code> – A fixed-width container that responds to screen sizes.</li>
+  <li><code>.container-fluid</code> – A full-width container spanning the entire width of the viewport.</li>
+</ul>
+
+<pre><code>
+&lt;div class="container"&gt;
+  Fixed-width content
+&lt;/div&gt;
+
+&lt;div class="container-fluid"&gt;
+  Full-width content
+&lt;/div&gt;
+</code></pre>
+
+<h3>2. Rows</h3>
+<p>
+  Rows are used to create horizontal groups of columns. They ensure proper alignment and spacing.
+</p>
+
+<pre><code>
+&lt;div class="row"&gt;
+  &lt;div class="col"&gt;Column 1&lt;/div&gt;
+  &lt;div class="col"&gt;Column 2&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>3. Columns</h3>
+<p>
+  Columns are flex containers within a row. Bootstrap uses a 12-column grid, allowing for flexible layouts by specifying how many columns each element should span.
+</p>
+
+<pre><code>
+&lt;div class="row"&gt;
+  &lt;div class="col-6"&gt;Half Width&lt;/div&gt;
+  &lt;div class="col-6"&gt;Half Width&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="row"&gt;
+  &lt;div class="col-sm-4 col-md-6 col-lg-3"&gt;
+    Responsive Column
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Tips</h3>
+<ul>
+  <li>Always place <code>.col-*</code> inside a <code>.row</code> inside a <code>.container</code>.</li>
+  <li>Use responsive column classes like <code>.col-md-4</code> for adaptable designs.</li>
+  <li>You can nest rows and columns to build complex layouts.</li>
+</ul>
+
 ## FLEXBOX IN BOOTSTRAP
 
 ## BUTTONS: TYPES, COLORS, AND SIZES
