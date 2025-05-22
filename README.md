@@ -551,6 +551,78 @@ import 'bootstrap';</code></pre>
 
 ## FLEXBOX IN BOOTSTRAP
 
+<p>
+  Bootstrap 5 is built entirely with <strong>Flexbox</strong>, a powerful layout module that allows you to design flexible and responsive layout structures without using float or positioning hacks.
+</p>
+
+<h3>Why Flexbox?</h3>
+<ul>
+  <li>Easy vertical and horizontal alignment.</li>
+  <li>Responsive layouts with less CSS.</li>
+  <li>Flexible resizing of elements.</li>
+  <li>Dynamic space distribution between items.</li>
+</ul>
+
+<h3>Basic Flex Utilities in Bootstrap</h3>
+<p>
+  Bootstrap provides a wide range of utility classes to apply Flexbox directly in your HTML without writing custom CSS.
+</p>
+
+<h4>1. <code>.d-flex</code></h4>
+<p>Makes an element a flex container.</p>
+<pre><code>
+&lt;div class="d-flex"&gt;
+  &lt;div&gt;Item 1&lt;/div&gt;
+  &lt;div&gt;Item 2&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h4>2. <code>.justify-content-*</code></h4>
+<p>Aligns children horizontally.</p>
+<ul>
+  <li><code>.justify-content-start</code></li>
+  <li><code>.justify-content-center</code></li>
+  <li><code>.justify-content-end</code></li>
+  <li><code>.justify-content-between</code></li>
+  <li><code>.justify-content-around</code></li>
+  <li><code>.justify-content-evenly</code></li>
+</ul>
+
+<h4>3. <code>.align-items-*</code></h4>
+<p>Aligns children vertically.</p>
+<ul>
+  <li><code>.align-items-start</code></li>
+  <li><code>.align-items-center</code></li>
+  <li><code>.align-items-end</code></li>
+</ul>
+
+<h4>4. <code>.flex-column</code> and <code>.flex-row</code></h4>
+<p>Changes the direction of the flex container.</p>
+<pre><code>
+&lt;div class="d-flex flex-column"&gt;
+  &lt;div&gt;Top&lt;/div&gt;
+  &lt;div&gt;Bottom&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h4>5. Responsive Flex</h4>
+<p>
+  You can make flex utilities responsive using breakpoints:
+</p>
+<pre><code>
+&lt;div class="d-flex flex-md-row flex-column"&gt;
+  &lt;div&gt;Item 1&lt;/div&gt;
+  &lt;div&gt;Item 2&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Summary</h3>
+<ul>
+  <li>Use <code>.d-flex</code> to initiate flex context.</li>
+  <li>Combine with <code>.justify-content-</code> and <code>.align-items-</code> for precise control.</li>
+  <li>Leverage responsive flex utilities to create adaptable layouts.</li>
+</ul>
+
 ## BUTTONS: TYPES, COLORS, AND SIZES
 
 ## ALERTS AND BADGES
