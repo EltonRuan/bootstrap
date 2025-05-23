@@ -625,6 +625,64 @@ import 'bootstrap';</code></pre>
 
 ## BUTTONS: TYPES, COLORS, AND SIZES
 
+<p>
+  Buttons in Bootstrap are highly customizable and easy to implement. They can be used to trigger actions, submit forms, navigate, and more.
+</p>
+
+<h3>Button Types</h3>
+<p>Bootstrap provides several button types using classes:</p>
+<ul>
+  <li><code>btn</code> - Required base class for all buttons.</li>
+  <li><code>btn-primary</code> - Used for primary actions.</li>
+  <li><code>btn-secondary</code> - Used for secondary actions.</li>
+  <li><code>btn-success</code> - Indicates a successful or positive action.</li>
+  <li><code>btn-danger</code> - Indicates a dangerous or potentially negative action.</li>
+  <li><code>btn-warning</code> - Indicates caution should be taken.</li>
+  <li><code>btn-info</code> - Represents neutral informative actions.</li>
+  <li><code>btn-light</code> and <code>btn-dark</code> - Alternate styles for dark/light themes.</li>
+  <li><code>btn-link</code> - Appears like a link.</li>
+</ul>
+
+<pre><code>
+&lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;
+&lt;button class="btn btn-danger"&gt;Danger&lt;/button&gt;
+&lt;button class="btn btn-link"&gt;Link&lt;/button&gt;
+</code></pre>
+
+<h3>Button Colors</h3>
+<p>Colors are applied using contextual classes mentioned above. You can also customize buttons using your own CSS if needed.</p>
+
+<h3>Button Sizes</h3>
+<p>Use these classes to adjust button size:</p>
+<ul>
+  <li><code>btn-lg</code> - Large button</li>
+  <li><code>btn-sm</code> - Small button</li>
+</ul>
+
+<pre><code>
+&lt;button class="btn btn-success btn-lg"&gt;Large Button&lt;/button&gt;
+&lt;button class="btn btn-warning btn-sm"&gt;Small Button&lt;/button&gt;
+</code></pre>
+
+<h3>Additional Options</h3>
+<ul>
+  <li><code>btn-block</code> (v4) or <code>d-grid gap-2</code> + <code>w-100</code> (v5) for full-width buttons.</li>
+  <li><code>disabled</code> attribute for disabling buttons.</li>
+  <li>Use button tags or anchor tags interchangeably.</li>
+</ul>
+
+<pre><code>
+&lt;button class="btn btn-primary" disabled&gt;Disabled&lt;/button&gt;
+&lt;a href="#" class="btn btn-info"&gt;Anchor Button&lt;/a&gt;
+</code></pre>
+
+<h3>Summary</h3>
+<ul>
+  <li>Use <code>.btn</code> with a contextual class like <code>.btn-primary</code>.</li>
+  <li>Control size with <code>.btn-sm</code> and <code>.btn-lg</code>.</li>
+  <li>Use utility classes for responsiveness and spacing.</li>
+</ul>
+
 ## ALERTS AND BADGES
 
 ## CARDS AND LIST GROUPS
