@@ -685,6 +685,82 @@ import 'bootstrap';</code></pre>
 
 ## ALERTS AND BADGES
 
+<p>
+  Alerts and badges are two essential components in Bootstrap used for feedback messages and displaying counts, statuses, or labels in a compact form.
+</p>
+
+<h3>Alerts</h3>
+<p>
+  Alerts provide contextual feedback messages for typical user actions. They come in several predefined colors and can be dismissible.
+</p>
+
+<h4>Basic Alert</h4>
+<pre><code>
+&lt;div class="alert alert-primary" role="alert"&gt;
+  This is a primary alert—check it out!
+&lt;/div&gt;
+</code></pre>
+
+<h4>Alert Contextual Classes</h4>
+<ul>
+  <li><code>alert-primary</code></li>
+  <li><code>alert-secondary</code></li>
+  <li><code>alert-success</code></li>
+  <li><code>alert-danger</code></li>
+  <li><code>alert-warning</code></li>
+  <li><code>alert-info</code></li>
+  <li><code>alert-light</code></li>
+  <li><code>alert-dark</code></li>
+</ul>
+
+<h4>Dismissible Alert</h4>
+<pre><code>
+&lt;div class="alert alert-warning alert-dismissible fade show" role="alert"&gt;
+  This is a dismissible alert!
+  &lt;button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"&gt;&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Badges</h3>
+<p>
+  Badges are used to highlight new or unread items, counters, or labels.
+</p>
+
+<h4>Basic Badge</h4>
+<pre><code>
+&lt;span class="badge bg-primary"&gt;New&lt;/span&gt;
+</code></pre>
+
+<h4>Badge Contextual Classes</h4>
+<ul>
+  <li><code>bg-primary</code></li>
+  <li><code>bg-secondary</code></li>
+  <li><code>bg-success</code></li>
+  <li><code>bg-danger</code></li>
+  <li><code>bg-warning text-dark</code></li>
+  <li><code>bg-info</code></li>
+  <li><code>bg-light text-dark</code></li>
+  <li><code>bg-dark</code></li>
+</ul>
+
+<h4>Badge in Buttons</h4>
+<pre><code>
+&lt;button type="button" class="btn btn-primary"&gt;
+  Notifications &lt;span class="badge bg-light text-dark"&gt;4&lt;/span&gt;
+&lt;/button&gt;
+</code></pre>
+
+<h4>Pill Badges</h4>
+<pre><code>
+&lt;span class="badge rounded-pill bg-success"&gt;Success&lt;/span&gt;
+</code></pre>
+
+<h3>Summary</h3>
+<ul>
+  <li>Use alerts for messages and notifications with dismiss functionality if needed.</li>
+  <li>Use badges for counts, labels, or statuses inside buttons, links, or text.</li>
+</ul>
+
 ## CARDS AND LIST GROUPS
 
 ## MODALS AND POPOVERS
