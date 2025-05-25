@@ -763,6 +763,87 @@ import 'bootstrap';</code></pre>
 
 ## CARDS AND LIST GROUPS
 
+<p>
+  Cards and list groups are versatile UI components in Bootstrap used for displaying content, links, and grouped information in a visually structured way.
+</p>
+
+<h3>Cards</h3>
+<p>
+  Cards are flexible and extensible content containers with multiple variants and options.
+</p>
+
+<h4>Basic Card</h4>
+<pre><code>
+&lt;div class="card" style="width: 18rem;"&gt;
+  &lt;img src="image.jpg" class="card-img-top" alt="..."&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Card Title&lt;/h5&gt;
+    &lt;p class="card-text"&gt;Some quick example text to build on the card title.&lt;/p&gt;
+    &lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h4>Card Variations</h4>
+<ul>
+  <li>Cards with headers and footers</li>
+  <li>Horizontal cards using <code>.row</code> and <code>.col</code></li>
+  <li>Cards with background variants using <code>.bg-*</code> and text variants with <code>.text-*</code></li>
+</ul>
+
+<h3>List Groups</h3>
+<p>
+  List groups are great for displaying a series of content or navigation items.
+</p>
+
+<h4>Basic List Group</h4>
+<pre><code>
+&lt;ul class="list-group"&gt;
+  &lt;li class="list-group-item"&gt;First item&lt;/li&gt;
+  &lt;li class="list-group-item"&gt;Second item&lt;/li&gt;
+  &lt;li class="list-group-item"&gt;Third item&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<h4>List Group with Links</h4>
+<pre><code>
+&lt;div class="list-group"&gt;
+  &lt;a href="#" class="list-group-item list-group-item-action active"&gt;Active item&lt;/a&gt;
+  &lt;a href="#" class="list-group-item list-group-item-action"&gt;Another item&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h4>List Group with Badges</h4>
+<pre><code>
+&lt;ul class="list-group"&gt;
+  &lt;li class="list-group-item d-flex justify-content-between align-items-center"&gt;
+    Messages
+    &lt;span class="badge bg-primary rounded-pill"&gt;14&lt;/span&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<h4>Cards with List Groups</h4>
+<pre><code>
+&lt;div class="card" style="width: 18rem;"&gt;
+  &lt;div class="card-header"&gt;
+    Featured
+  &lt;/div&gt;
+  &lt;ul class="list-group list-group-flush"&gt;
+    &lt;li class="list-group-item"&gt;Item 1&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;Item 2&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;Item 3&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Summary</h3>
+<ul>
+  <li>Cards are used for content blocks with images, text, and actions.</li>
+  <li>List groups are ideal for structured lists, navigation, or content grouping.</li>
+  <li>They can be combined for more powerful UI elements.</li>
+</ul>
+
 ## MODALS AND POPOVERS
 
 ## NAVBARS AND RESPONSIVE MENUS
