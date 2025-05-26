@@ -846,6 +846,79 @@ import 'bootstrap';</code></pre>
 
 ## MODALS AND POPOVERS
 
+<p>
+  Modals and popovers are interactive components in Bootstrap used to present content or actions in a focused overlay without navigating away from the current page.
+</p>
+
+<h3>Modals</h3>
+<p>
+  A modal is a dialog box/popup window that is displayed on top of the current page.
+</p>
+
+<h4>Basic Modal Structure</h4>
+<pre><code>
+&lt;!-- Button to trigger modal --&gt;
+&lt;button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"&gt;
+  Launch demo modal
+&lt;/button&gt;
+
+&lt;!-- Modal --&gt;
+&lt;div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"&gt;
+  &lt;div class="modal-dialog"&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;h5 class="modal-title" id="exampleModalLabel"&gt;Modal Title&lt;/h5&gt;
+        &lt;button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"&gt;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+        Modal body content goes here.
+      &lt;/div&gt;
+      &lt;div class="modal-footer"&gt;
+        &lt;button type="button" class="btn btn-secondary" data-bs-dismiss="modal"&gt;Close&lt;/button&gt;
+        &lt;button type="button" class="btn btn-primary"&gt;Save changes&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h4>Modal Options</h4>
+<ul>
+  <li><code>data-bs-backdrop="static"</code> – Prevents closing on click outside</li>
+  <li><code>data-bs-keyboard="false"</code> – Prevents closing with Esc key</li>
+  <li>Sizes: <code>modal-sm</code>, <code>modal-lg</code>, <code>modal-xl</code></li>
+</ul>
+
+<h3>Popovers</h3>
+<p>
+  Popovers are small overlays that appear upon user interaction, usually over buttons or links.
+</p>
+
+<h4>Enabling Popovers</h4>
+<p>
+  Make sure Popper and Bootstrap JS are properly included, then enable popovers using JavaScript.
+</p>
+
+<pre><code>
+// Enable popover globally
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new bootstrap.Popover(popoverTriggerEl));
+</code></pre>
+
+<h4>Example Popover</h4>
+<pre><code>
+&lt;button type="button" class="btn btn-secondary" data-bs-toggle="popover" title="Popover title" data-bs-content="Popover body content is here."&gt;
+  Click me
+&lt;/button&gt;
+</code></pre>
+
+<h3>Summary</h3>
+<ul>
+  <li><strong>Modals</strong> are ideal for forms, alerts, or confirmations.</li>
+  <li><strong>Popovers</strong> are useful for hints or additional information on interaction.</li>
+  <li>Both components enhance interactivity and UX.</li>
+</ul>
+
 ## NAVBARS AND RESPONSIVE MENUS
 
 ## PAGINATION AND BREADCRUMBS
