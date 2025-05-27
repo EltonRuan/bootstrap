@@ -921,6 +921,73 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
 
 ## NAVBARS AND RESPONSIVE MENUS
 
+<p>
+  Bootstrap provides powerful navigation components like navbars that are fully responsive and customizable. They adapt to different screen sizes and can include brand names, links, dropdowns, forms, and togglers.
+</p>
+
+<h3>Basic Navbar Structure</h3>
+
+<pre><code>
+&lt;nav class="navbar navbar-expand-lg navbar-light bg-light"&gt;
+  &lt;div class="container-fluid"&gt;
+    &lt;a class="navbar-brand" href="#"&gt;BrandName&lt;/a&gt;
+    &lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"&gt;
+      &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class="collapse navbar-collapse" id="navbarNav"&gt;
+      &lt;ul class="navbar-nav"&gt;
+        &lt;li class="nav-item"&gt;
+          &lt;a class="nav-link active" aria-current="page" href="#"&gt;Home&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+          &lt;a class="nav-link" href="#"&gt;Features&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+          &lt;a class="nav-link" href="#"&gt;Pricing&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+</code></pre>
+
+<h3>Color Schemes</h3>
+<ul>
+  <li><code>navbar-light bg-light</code> – Light text on light background</li>
+  <li><code>navbar-dark bg-dark</code> – Light text on dark background</li>
+  <li>Custom colors can be used with Bootstrap utility classes or custom CSS</li>
+</ul>
+
+<h3>Responsiveness</h3>
+<ul>
+  <li><code>navbar-expand-lg</code> – Expands the navbar on large screens and collapses on smaller ones</li>
+  <li>Change the breakpoint with: <code>navbar-expand-sm</code>, <code>navbar-expand-md</code>, <code>navbar-expand-xl</code></li>
+</ul>
+
+<h3>Dropdown Menus</h3>
+
+<pre><code>
+&lt;li class="nav-item dropdown"&gt;
+  &lt;a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;
+    Dropdown
+  &lt;/a&gt;
+  &lt;ul class="dropdown-menu" aria-labelledby="navbarDropdown"&gt;
+    &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;hr class="dropdown-divider"&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/li&gt;
+</code></pre>
+
+<h3>Summary</h3>
+<ul>
+  <li>Use navbars to create site-wide navigation</li>
+  <li>Responsive and collapsible by default</li>
+  <li>Fully customizable with Bootstrap classes and utility styles</li>
+</ul>
+
 ## PAGINATION AND BREADCRUMBS
 
 ## COLLAPSE AND ACCORDIONS
