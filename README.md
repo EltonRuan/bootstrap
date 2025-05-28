@@ -990,6 +990,62 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
 
 ## PAGINATION AND BREADCRUMBS
 
+<p>
+  Bootstrap provides built-in components for handling navigation within your website, such as pagination and breadcrumbs. These elements help users move through content and understand their location within the site.
+</p>
+
+<h3>Pagination</h3>
+<p>
+  Pagination is used to divide content into multiple pages, commonly used in lists, tables, or search results.
+</p>
+
+<pre><code>
+&lt;nav aria-label="Page navigation example"&gt;
+  &lt;ul class="pagination"&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Previous&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Next&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre>
+
+<h4>Customization Options</h4>
+<ul>
+  <li><code>.pagination-lg</code> or <code>.pagination-sm</code> for size variations</li>
+  <li><code>.disabled</code> and <code>.active</code> classes for state control</li>
+</ul>
+
+<h3>Breadcrumbs</h3>
+<p>
+  Breadcrumbs provide a trail for the user to navigate back to previously visited sections or higher levels in the hierarchy.
+</p>
+
+<pre><code>
+&lt;nav aria-label="breadcrumb"&gt;
+  &lt;ol class="breadcrumb"&gt;
+    &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;Library&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="breadcrumb-item active" aria-current="page"&gt;Data&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/nav&gt;
+</code></pre>
+
+<h4>Styling</h4>
+<ul>
+  <li>Uses ordered list <code>&lt;ol&gt;</code> with <code>.breadcrumb</code> class</li>
+  <li>Each breadcrumb item is a list element with the <code>.breadcrumb-item</code> class</li>
+  <li>The last item typically has <code>.active</code> and <code>aria-current="page"</code></li>
+</ul>
+
+<h3>Summary</h3>
+<ul>
+  <li>Use pagination to handle large datasets or multiple pages</li>
+  <li>Use breadcrumbs to enhance navigation and user orientation</li>
+  <li>Both components are highly customizable and responsive</li>
+</ul>
+
 ## COLLAPSE AND ACCORDIONS
 
 ## SPINNERS AND LOADERS
