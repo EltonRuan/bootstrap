@@ -1048,6 +1048,77 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
 
 ## COLLAPSE AND ACCORDIONS
 
+<p>
+  Bootstrap offers interactive UI components like Collapse and Accordions that allow you to show or hide content dynamically. These components are especially useful for FAQs, toggle menus, and compact content displays.
+</p>
+
+<h3>Collapse</h3>
+<p>
+  The <code>.collapse</code> class is used to toggle visibility of content using JavaScript triggers.
+</p>
+
+<pre><code>
+&lt;p&gt;
+  &lt;a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"&gt;
+    Toggle Content
+  &lt;/a&gt;
+&lt;/p&gt;
+&lt;div class="collapse" id="collapseExample"&gt;
+  &lt;div class="card card-body"&gt;
+    This content is hidden by default and revealed when the button is clicked.
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Accordions</h3>
+<p>
+  Accordions are collections of collapsible items that work together so that only one item is shown at a time.
+</p>
+
+<pre><code>
+&lt;div class="accordion" id="accordionExample"&gt;
+  &lt;div class="accordion-item"&gt;
+    &lt;h2 class="accordion-header" id="headingOne"&gt;
+      &lt;button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"&gt;
+        Accordion Item #1
+      &lt;/button&gt;
+    &lt;/h2&gt;
+    &lt;div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample"&gt;
+      &lt;div class="accordion-body"&gt;
+        This is the first item's accordion body.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt>
+
+  &lt;div class="accordion-item"&gt;
+    &lt;h2 class="accordion-header" id="headingTwo"&gt;
+      &lt;button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"&gt;
+        Accordion Item #2
+      &lt;/button&gt;
+    &lt;/h2&gt;
+    &lt;div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample"&gt;
+      &lt;div class="accordion-body"&gt;
+        This is the second item's accordion body.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h4>Key Notes</h4>
+<ul>
+  <li>Use <code>data-bs-toggle="collapse"</code> to link a trigger with a target element.</li>
+  <li><code>.accordion</code> component controls the visibility of only one section at a time.</li>
+  <li>Accessibility attributes like <code>aria-expanded</code> and <code>aria-controls</code> are important for screen readers.</li>
+</ul>
+
+<h3>Summary</h3>
+<ul>
+  <li><strong>Collapse:</strong> Great for toggling sections independently.</li>
+  <li><strong>Accordion:</strong> Perfect for grouped, exclusive content sections.</li>
+  <li>Both rely on Bootstrap JavaScript and data attributes for interactivity.</li>
+</ul>
+
 ## SPINNERS AND LOADERS
 
 ## PROGRESS BARS
