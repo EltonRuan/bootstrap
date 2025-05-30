@@ -1121,6 +1121,65 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
 
 ## SPINNERS AND LOADERS
 
+<p>
+  Bootstrap provides lightweight loading indicators—called <strong>spinners</strong>—to visually show that a process is ongoing or loading. These are customizable and can be used for buttons, sections, or entire pages.
+</p>
+
+<h3>Basic Spinner</h3>
+<p>Use the <code>.spinner-border</code> class for a border-style spinner:</p>
+
+<pre><code>
+&lt;div class="spinner-border text-primary" role="status"&gt;
+  &lt;span class="visually-hidden"&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Growing Spinner</h3>
+<p>The <code>.spinner-grow</code> class creates a growing-style spinner:</p>
+
+<pre><code>
+&lt;div class="spinner-grow text-success" role="status"&gt;
+  &lt;span class="visually-hidden"&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Color Variants</h3>
+<p>Spinners support contextual color classes like:</p>
+<ul>
+  <li><code>.text-primary</code></li>
+  <li><code>.text-secondary</code></li>
+  <li><code>.text-success</code></li>
+  <li><code>.text-danger</code></li>
+  <li><code>.text-warning</code></li>
+  <li><code>.text-info</code></li>
+  <li><code>.text-light</code></li>
+  <li><code>.text-dark</code></li>
+</ul>
+
+<h3>Spinners in Buttons</h3>
+<p>Combine spinners with buttons to indicate loading states:</p>
+
+<pre><code>
+&lt;button class="btn btn-primary" type="button" disabled&gt;
+  &lt;span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"&gt;&lt;/span&gt;
+  Loading...
+&lt;/button&gt;
+</code></pre>
+
+<h3>Accessibility</h3>
+<ul>
+  <li>Always use <code>&lt;span class="visually-hidden"&gt;Loading...&lt;/span&gt;</code> for screen readers.</li>
+  <li>Spinners are purely visual, so provide textual fallback when needed.</li>
+</ul>
+
+<h3>Summary</h3>
+<ul>
+  <li><strong>spinner-border</strong> = circular outline spinner</li>
+  <li><strong>spinner-grow</strong> = expanding spinner</li>
+  <li>Customize size using <code>.spinner-border-sm</code></li>
+  <li>Useful inside buttons, modals, or full screens</li>
+</ul>
+
 ## PROGRESS BARS
 
 ## TYPOGRAPHY UTILITIES
