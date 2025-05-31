@@ -1182,6 +1182,81 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
 
 ## PROGRESS BARS
 
+<p>
+  Bootstrap provides a flexible and customizable <strong>progress bar</strong> component to visually represent the progress of a task or process. These are often used in uploads, form completions, or loading sequences.
+</p>
+
+<h3>Basic Progress Bar</h3>
+<p>Use the <code>.progress</code> container with <code>.progress-bar</code> inside:</p>
+
+<pre><code>
+&lt;div class="progress"&gt;
+  &lt;div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"&gt;
+    50%
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Colored Progress Bars</h3>
+<p>Use contextual classes like:</p>
+<ul>
+  <li><code>.bg-success</code></li>
+  <li><code>.bg-info</code></li>
+  <li><code>.bg-warning</code></li>
+  <li><code>.bg-danger</code></li>
+</ul>
+
+<pre><code>
+&lt;div class="progress"&gt;
+  &lt;div class="progress-bar bg-success" style="width: 75%;"&gt;75%&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>📐 Striped Progress Bar</h3>
+<p>Add <code>.progress-bar-striped</code> for stripes:</p>
+
+<pre><code>
+&lt;div class="progress"&gt;
+  &lt;div class="progress-bar progress-bar-striped" style="width: 60%;"&gt;60%&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Animated Stripes</h3>
+<p>Add <code>.progress-bar-animated</code> to make stripes move:</p>
+
+<pre><code>
+&lt;div class="progress"&gt;
+  &lt;div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width: 80%;"&gt;80%&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Multiple Bars</h3>
+<p>Place multiple <code>.progress-bar</code> elements inside a single <code>.progress</code>:</p>
+
+<pre><code>
+&lt;div class="progress"&gt;
+  &lt;div class="progress-bar bg-success" style="width: 40%"&gt;40%&lt;/div&gt;
+  &lt;div class="progress-bar bg-warning" style="width: 20%"&gt;20%&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Height Customization</h3>
+<p>Control the height of the progress bar using inline style:</p>
+
+<pre><code>
+&lt;div class="progress" style="height: 30px;"&gt;
+  &lt;div class="progress-bar" style="width: 70%;"&gt;70%&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Summary</h3>
+<ul>
+  <li><strong>.progress</strong>: Container element</li>
+  <li><strong>.progress-bar</strong>: Fills the bar</li>
+  <li>Use <code>style="width: %"</code> to set progress</li>
+  <li>Supports striping, animation, and color variations</li>
+</ul>
+
 ## TYPOGRAPHY UTILITIES
 
 ## COLOR UTILITIES
