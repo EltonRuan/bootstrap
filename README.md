@@ -1259,6 +1259,95 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
 
 ## TYPOGRAPHY UTILITIES
 
+<p>
+  Bootstrap provides a rich set of typography utility classes that help you easily style and align text elements. These utilities are responsive, customizable, and essential for creating well-structured, readable content.
+</p>
+
+<h3>Font Size</h3>
+<p>Use responsive font sizing with classes like:</p>
+<ul>
+  <li><code>.fs-1</code> (largest)</li>
+  <li><code>.fs-2</code></li>
+  <li><code>.fs-3</code></li>
+  <li><code>.fs-4</code></li>
+  <li><code>.fs-5</code></li>
+  <li><code>.fs-6</code> (smallest)</li>
+</ul>
+
+<pre><code>
+&lt;p class="fs-1"&gt;Huge Text&lt;/p&gt;
+&lt;p class="fs-6"&gt;Tiny Text&lt;/p&gt;
+</code></pre>
+
+<h3>Font Weight and Style</h3>
+<p>Control boldness and style using:</p>
+<ul>
+  <li><code>.fw-bold</code></li>
+  <li><code>.fw-semibold</code></li>
+  <li><code>.fw-normal</code></li>
+  <li><code>.fw-light</code></li>
+  <li><code>.fst-italic</code></li>
+  <li><code>.fst-normal</code></li>
+</ul>
+
+<pre><code>
+&lt;p class="fw-bold fst-italic"&gt;Bold and Italic Text&lt;/p&gt;
+</code></pre>
+
+<h3>Text Alignment</h3>
+<ul>
+  <li><code>.text-start</code></li>
+  <li><code>.text-center</code></li>
+  <li><code>.text-end</code></li>
+</ul>
+
+<pre><code>
+&lt;p class="text-center"&gt;Centered Text&lt;/p&gt;
+</code></pre>
+
+<h3>Text Color and Background</h3>
+<p>Use contextual classes like:</p>
+<ul>
+  <li><code>.text-primary</code></li>
+  <li><code>.text-success</code></li>
+  <li><code>.text-danger</code></li>
+  <li><code>.bg-light</code>, <code>.bg-dark</code>, etc.</li>
+</ul>
+
+<pre><code>
+&lt;p class="text-success bg-light"&gt;Success message!&lt;/p&gt;
+</code></pre>
+
+<h3>Text Transform</h3>
+<ul>
+  <li><code>.text-lowercase</code></li>
+  <li><code>.text-uppercase</code></li>
+  <li><code>.text-capitalize</code></li>
+</ul>
+
+<pre><code>
+&lt;p class="text-uppercase"&gt;uppercase text&lt;/p&gt;
+</code></pre>
+
+<h3>Line Height and Truncation</h3>
+<ul>
+  <li><code>.lh-1</code>, <code>.lh-sm</code>, <code>.lh-base</code>, <code>.lh-lg</code></li>
+  <li><code>.text-truncate</code> (for ellipsis)</li>
+</ul>
+
+<pre><code>
+&lt;p class="lh-lg"&gt;This text has larger line height.&lt;/p&gt;
+&lt;p class="text-truncate" style="max-width: 150px;"&gt;Very long text that will be truncated.&lt;/p&gt;
+</code></pre>
+
+<h3>Summary</h3>
+<ul>
+  <li>Use <strong>.fs-*</strong> for font sizes</li>
+  <li><strong>.fw-*</strong> and <strong>.fst-*</strong> for weight and style</li>
+  <li><strong>.text-*</strong> for alignment, transform, and color</li>
+  <li>Background and spacing classes enhance readability</li>
+</ul>
+
 ## COLOR UTILITIES
 
 ## SPACING (MARGINS & PADDINGS)
