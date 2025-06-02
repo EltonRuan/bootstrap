@@ -1350,6 +1350,77 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
 
 ## COLOR UTILITIES
 
+<p>
+  Bootstrap provides a wide range of color utility classes that let you quickly apply text, background, and border colors without writing custom CSS. These utilities follow Bootstrap’s design system, ensuring visual consistency across your project.
+</p>
+
+<h3>Text</h3>
+<p>You can change text color using classes like:</p>
+<ul>
+  <li><code>.text-primary</code></li>
+  <li><code>.text-secondary</code></li>
+  <li><code>.text-success</code></li>
+  <li><code>.text-danger</code></li>
+  <li><code>.text-warning</code></li>
+  <li><code>.text-info</code></li>
+  <li><code>.text-light</code></li>
+  <li><code>.text-dark</code></li>
+  <li><code>.text-muted</code></li>
+  <li><code>.text-white</code></li>
+</ul>
+
+<pre><code>
+&lt;p class="text-success"&gt;Green success text&lt;/p&gt;
+&lt;p class="text-danger"&gt;Red error text&lt;/p&gt;
+</code></pre>
+
+<h3>Background</h3>
+<p>Background color classes work in a similar way:</p>
+<ul>
+  <li><code>.bg-primary</code></li>
+  <li><code>.bg-secondary</code></li>
+  <li><code>.bg-success</code></li>
+  <li><code>.bg-danger</code></li>
+  <li><code>.bg-warning</code></li>
+  <li><code>.bg-info</code></li>
+  <li><code>.bg-light</code></li>
+  <li><code>.bg-dark</code></li>
+  <li><code>.bg-white</code></li>
+  <li><code>.bg-transparent</code></li>
+</ul>
+
+<pre><code>
+&lt;div class="bg-warning text-dark p-3"&gt;Yellow background with dark text&lt;/div&gt;
+</code></pre>
+
+<h3>Borders</h3>
+<p>You can apply color to borders with classes like:</p>
+<ul>
+  <li><code>.border</code> + <code>.border-primary</code></li>
+  <li><code>.border-success</code>, <code>.border-danger</code>, etc.</li>
+</ul>
+
+<pre><code>
+&lt;div class="border border-info p-2"&gt;Box with light blue border&lt;/div&gt;
+</code></pre>
+
+<h3>Customization</h3>
+<p>You can combine these colors with other utilities like spacing and shadows to build visually appealing components:</p>
+
+<pre><code>
+&lt;div class="bg-primary text-white p-4 rounded shadow"&gt;
+  Card with blue background and white text
+&lt;/div&gt;
+</code></pre>
+
+<h3>Summary</h3>
+<ul>
+  <li>Use <code>.text-*</code> to change text color</li>
+  <li>Use <code>.bg-*</code> to set background color</li>
+  <li>Use <code>.border-*</code> for colored borders</li>
+  <li>Classes are responsive and follow the Bootstrap theme</li>
+</ul>
+
 ## SPACING (MARGINS & PADDINGS)
 
 ## BORDERS, SHADOWS, AND RADIUS
