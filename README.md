@@ -1423,6 +1423,49 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
 
 ## SPACING (MARGINS & PADDINGS)
 
+<p>
+  Bootstrap includes a powerful spacing utility system for managing margins (<code>m</code>) and paddings (<code>p</code>) on all sides of an element. This system follows a scale from <code>0</code> to <code>5</code> (and sometimes auto), allowing precise control over layout spacing.
+</p>
+
+<h3>Syntax</h3>
+<p>
+  The general syntax for spacing classes is:
+</p>
+<pre><code>
+{property}{side}-{breakpoint?}-{size}
+</code></pre>
+
+<ul>
+  <li><strong>Property:</strong> <code>m</code> (margin), <code>p</code> (padding)</li>
+  <li><strong>Side:</strong> <code>t</code> (top), <code>b</code> (bottom), <code>s</code> (start/left), <code>e</code> (end/right), <code>x</code> (left & right), <code>y</code> (top & bottom), blank (all sides)</li>
+  <li><strong>Breakpoint (optional):</strong> e.g., <code>sm</code>, <code>md</code></li>
+  <li><strong>Size:</strong> <code>0</code> to <code>5</code>, or <code>auto</code> for margin</li>
+</ul>
+
+<h3>Examples</h3>
+
+<pre><code>
+&lt;div class="m-3"&gt;Margin on all sides&lt;/div&gt;
+&lt;div class="pt-4"&gt;Padding on top&lt;/div&gt;
+&lt;div class="mx-auto"&gt;Horizontal margin auto (centered)&lt;/div&gt;
+&lt;div class="p-0"&gt;No padding&lt;/div&gt;
+</code></pre>
+
+<h3>Notes</h3>
+<ul>
+  <li>All classes are mobile-first and responsive-friendly</li>
+  <li>Combine with flex and grid utilities to build layout spacing easily</li>
+  <li>Spacing scale represents multiples of <code>.25rem</code> (e.g., <code>m-1</code> = <code>.25rem</code>)</li>
+</ul>
+
+<h3>Summary</h3>
+<ul>
+  <li><code>.m*</code> and <code>.p*</code> handle margins and paddings</li>
+  <li>Use directional classes like <code>.mt-3</code>, <code>.px-2</code>, etc.</li>
+  <li>Responsive spacing can be set using breakpoints (e.g., <code>.mb-md-5</code>)</li>
+  <li><code>auto</code> is only valid for margins</li>
+</ul>
+
 ## BORDERS, SHADOWS, AND RADIUS
 
 ## DISPLAY AND VISIBILITY UTILITIES
