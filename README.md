@@ -1468,6 +1468,66 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
 
 ## BORDERS, SHADOWS, AND RADIUS
 
+<p>
+  Bootstrap provides utility classes to style borders, apply shadows, and control border-radius on elements, helping developers create sleek and modern UI components.
+</p>
+
+<h3>Border Utilities</h3>
+<p>
+  Add or remove borders using simple utility classes.
+</p>
+
+<pre><code>
+&lt;div class="border"&gt;All borders&lt;/div&gt;
+&lt;div class="border-top"&gt;Top border only&lt;/div&gt;
+&lt;div class="border-0"&gt;No border&lt;/div&gt;
+&lt;div class="border-primary"&gt;Primary colored border&lt;/div&gt;
+</code></pre>
+
+<h4>Available Classes:</h4>
+<ul>
+  <li><code>.border</code>, <code>.border-top</code>, <code>.border-end</code>, <code>.border-bottom</code>, <code>.border-start</code></li>
+  <li><code>.border-0</code>, <code>.border-top-0</code>, etc. for removing specific borders</li>
+  <li>Color variants: <code>.border-primary</code>, <code>.border-success</code>, <code>.border-danger</code>, etc.</li>
+  <li>Width variants: <code>.border-1</code> to <code>.border-5</code></li>
+</ul>
+
+<h3>Shadow Utilities</h3>
+<p>
+  Apply shadow effects for depth and emphasis.
+</p>
+
+<pre><code>
+&lt;div class="shadow-none"&gt;No shadow&lt;/div&gt;
+&lt;div class="shadow-sm"&gt;Small shadow&lt;/div&gt;
+&lt;div class="shadow"&gt;Regular shadow&lt;/div&gt;
+&lt;div class="shadow-lg"&gt;Large shadow&lt;/div&gt;
+</code></pre>
+
+<h3>Border Radius (Rounded Corners)</h3>
+<p>
+  Create rounded corners with predefined radius classes.
+</p>
+
+<pre><code>
+&lt;div class="rounded"&gt;Slightly rounded corners&lt;/div&gt;
+&lt;div class="rounded-circle"&gt;Perfect circle (for equal width and height)&lt;/div&gt;
+&lt;div class="rounded-pill"&gt;Pill-shaped corners&lt;/div&gt;
+&lt;div class="rounded-0"&gt;No rounding&lt;/div&gt;
+</code></pre>
+
+<h4>Directional Radius Classes:</h4>
+<ul>
+  <li><code>.rounded-top</code>, <code>.rounded-end</code>, <code>.rounded-bottom</code>, <code>.rounded-start</code></li>
+</ul>
+
+<h3>Summary</h3>
+<ul>
+  <li>Use <code>.border</code> classes to control visibility, color, and width</li>
+  <li>Use <code>.shadow</code> classes to add elevation effects</li>
+  <li>Use <code>.rounded</code> classes to apply different levels and directions of border-radius</li>
+</ul>
+
 ## DISPLAY AND VISIBILITY UTILITIES
 
 ## RESPONSIVE UTILITIES
