@@ -1530,6 +1530,55 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
 
 ## DISPLAY AND VISIBILITY UTILITIES
 
+<p>
+  Bootstrap offers a powerful set of utility classes to control how elements are displayed and whether they are visible or hidden — all without writing custom CSS.
+</p>
+
+<h3>Display Classes</h3>
+<p>
+  Use the <code>.d-*</code> classes to control an element’s display property.
+</p>
+
+<pre><code>
+&lt;div class="d-none"&gt;Hidden&lt;/div&gt;
+&lt;div class="d-block"&gt;Displayed as block&lt;/div&gt;
+&lt;div class="d-inline"&gt;Displayed inline&lt;/div&gt;
+&lt;div class="d-inline-block"&gt;Displayed as inline-block&lt;/div&gt;
+</code></pre>
+
+<h4>Responsive Display Variants:</h4>
+<p>
+  You can combine display classes with breakpoints:
+</p>
+
+<pre><code>
+&lt;div class="d-none d-md-block"&gt;Hidden on small, visible on medium and up&lt;/div&gt;
+&lt;div class="d-sm-inline d-lg-none"&gt;Inline on small, hidden on large and up&lt;/div&gt;
+</code></pre>
+
+<h3>Visibility Classes</h3>
+<p>
+  Use visibility utilities to toggle the visibility of elements without changing the layout (unlike display).
+</p>
+
+<pre><code>
+&lt;div class="visible"&gt;Visible (default)&lt;/div&gt;
+&lt;div class="invisible"&gt;Invisible but still takes up space&lt;/div&gt;
+</code></pre>
+
+<h3>Utility for Responsive Visibility</h3>
+<p>
+  You can also use the combination of display and visibility classes to handle responsiveness and hide/show content depending on the screen size.
+</p>
+
+<h3>Summary</h3>
+<ul>
+  <li><code>.d-none</code>, <code>.d-block</code>, <code>.d-flex</code>, etc., control layout display</li>
+  <li>Combine with breakpoints: <code>.d-md-none</code>, <code>.d-lg-block</code>, etc.</li>
+  <li><code>.invisible</code> hides elements visually but keeps layout space</li>
+  <li>Ideal for responsive designs and toggling UI elements dynamically</li>
+</ul>
+
 ## RESPONSIVE UTILITIES
 
 ## CUSTOMIZING BOOTSTRAP WITH SASS
