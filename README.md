@@ -1581,6 +1581,45 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
 
 ## RESPONSIVE UTILITIES
 
+<p>
+  Bootstrap’s responsive utilities provide powerful tools to show or hide content depending on the screen size. These classes are essential for building mobile-first, responsive layouts.
+</p>
+
+<h3>Responsive Display Classes</h3>
+<p>
+  Use classes like <code>.d-none</code>, <code>.d-sm-block</code>, <code>.d-md-inline</code>, etc., to change how elements appear at specific breakpoints.
+</p>
+
+<pre><code>
+&lt;div class="d-none d-md-block"&gt;Visible on medium and larger screens&lt;/div&gt;
+&lt;div class="d-sm-none d-lg-block"&gt;Hidden on small, visible on large&lt;/div&gt;
+</code></pre>
+
+<h3>Breakpoint Options</h3>
+<ul>
+  <li><code>sm</code> — ≥576px</li>
+  <li><code>md</code> — ≥768px</li>
+  <li><code>lg</code> — ≥992px</li>
+  <li><code>xl</code> — ≥1200px</li>
+  <li><code>xxl</code> — ≥1400px</li>
+</ul>
+
+<h3>Visibility vs Display</h3>
+<p>
+  Remember: <code>.invisible</code> hides elements visually but keeps layout space. <code>.d-none</code> removes the element from layout entirely.
+</p>
+
+<h3>Use Cases</h3>
+<ul>
+  <li>Show mobile-only or desktop-only content</li>
+  <li>Toggle layout components responsively</li>
+  <li>Enhance UX across screen sizes</li>
+</ul>
+
+<p>
+  Combine with other utilities like spacing, borders, and flexbox to create adaptive, user-friendly designs.
+</p>
+
 ## CUSTOMIZING BOOTSTRAP WITH SASS
 
 ## USING BOOTSTRAP ICONS
