@@ -1622,6 +1622,69 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
 
 ## CUSTOMIZING BOOTSTRAP WITH SASS
 
+<p>
+  Bootstrap is built with Sass, a powerful CSS preprocessor that allows you to customize Bootstrap's styles by modifying its variables, using mixins, functions, and more.
+</p>
+
+<h3>Setting Up Bootstrap with Sass</h3>
+<p>To start customizing Bootstrap with Sass, you need a Sass environment (like Vite, Webpack, or Laravel Mix):</p>
+
+<pre><code>
+// Install Bootstrap and Sass via npm
+npm install bootstrap sass
+</code></pre>
+
+<h3>Import Only What You Need</h3>
+<p>
+  Instead of importing the full Bootstrap CSS, import just the parts you want in your <code>custom.scss</code> file:
+</p>
+
+<pre><code>
+// custom.scss
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+// Import selected components
+@import "node_modules/bootstrap/scss/root";
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/utilities";
+</code></pre>
+
+<h3>Customizing Variables</h3>
+<p>
+  Override Bootstrap's default Sass variables <strong>before</strong> importing Bootstrap’s Sass files:
+</p>
+
+<pre><code>
+// custom.scss
+$primary: #6f42c1;
+$font-family-base: 'Segoe UI', sans-serif;
+
+@import "bootstrap";
+</code></pre>
+
+<h3>Why Customize with Sass?</h3>
+<ul>
+  <li>Define your own color palette</li>
+  <li>Set custom breakpoints, spacing, shadows, and more</li>
+  <li>Reduce CSS size by only importing what you need</li>
+</ul>
+
+<h3>Rebuilding Bootstrap</h3>
+<p>
+  After modifying your Sass files, compile them to CSS using a Sass compiler:
+</p>
+
+<pre><code>
+sass custom.scss custom.css
+</code></pre>
+
+<p>
+  Using Sass with Bootstrap gives you full control over the design system, enabling more maintainable and scalable front-end development.
+</p>
+
 ## USING BOOTSTRAP ICONS
 
 ## BUILDING RESPONSIVE LAYOUTS
