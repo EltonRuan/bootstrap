@@ -1687,6 +1687,46 @@ sass custom.scss custom.css
 
 ## USING BOOTSTRAP ICONS
 
+<p>
+  <strong>Bootstrap Icons</strong> is a free, open-source icon library officially maintained by the Bootstrap team. It provides over 1,800 scalable vector icons that are easy to use with Bootstrap components.
+</p>
+
+<h3>📦 Installing Bootstrap Icons</h3>
+
+<p>You can include Bootstrap Icons in your project via CDN or by installing them locally using npm:</p>
+
+<h4>🔗 CDN</h4>
+<pre><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"&gt;</code></pre>
+
+<h4>📥 NPM</h4>
+<pre><code>npm install bootstrap-icons</code></pre>
+
+<p>Then, include it in your CSS or JS entry file:</p>
+<pre><code>@import "bootstrap-icons/font/bootstrap-icons.css";</code></pre>
+
+<h3>🔧 Using Icons in HTML</h3>
+
+<p>To use an icon, simply add the <code>bi</code> class and the specific icon name class to an inline element like <code>&lt;i&gt;</code> or <code>&lt;span&gt;</code>:</p>
+
+<pre><code>&lt;i class="bi bi-alarm"&gt;&lt;/i&gt;
+&lt;span class="bi bi-heart-fill"&gt;&lt;/span&gt;
+</code></pre>
+
+<h3>🎨 Styling Icons</h3>
+<ul>
+  <li>Change size with Bootstrap’s utility classes: <code>.fs-1</code>, <code>.fs-2</code>, etc.</li>
+  <li>Change color with <code>.text-primary</code>, <code>.text-danger</code>, etc.</li>
+</ul>
+
+<pre><code>&lt;i class="bi bi-battery-full fs-3 text-success"&gt;&lt;/i&gt;</code></pre>
+
+<h3>📚 Icon Library Reference</h3>
+<p>Browse the full list of icons at <a href="https://icons.getbootstrap.com/" target="_blank">icons.getbootstrap.com</a>.</p>
+
+<p>
+  Bootstrap Icons make it quick and easy to add professional vector graphics to your UI without relying on external image files or SVGs.
+</p>
+
 ## BUILDING RESPONSIVE LAYOUTS
 
 ## CENTERING CONTENT
