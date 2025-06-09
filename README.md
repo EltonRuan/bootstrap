@@ -1729,6 +1729,61 @@ sass custom.scss custom.css
 
 ## BUILDING RESPONSIVE LAYOUTS
 
+<p>
+  One of Bootstrap’s greatest strengths is its powerful grid system and utility classes that make building responsive layouts both intuitive and flexible. With just a few lines of code, you can create interfaces that look great on any screen size — from mobile devices to large desktops.
+</p>
+
+<h3>Responsive Grid System</h3>
+
+<p>
+  Bootstrap’s grid is based on a 12-column layout with five default breakpoints: <code>xs</code>, <code>sm</code>, <code>md</code>, <code>lg</code>, and <code>xl</code>. You can combine these classes to create dynamic and adaptable layouts.
+</p>
+
+<pre><code>
+&lt;div class="container"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-12 col-md-6 col-lg-4"&gt;Column 1&lt;/div&gt;
+    &lt;div class="col-12 col-md-6 col-lg-4"&gt;Column 2&lt;/div&gt;
+    &lt;div class="col-12 col-lg-4"&gt;Column 3&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Containers and Rows</h3>
+
+<ul>
+  <li><code>.container</code>: Provides a fixed-width responsive container.</li>
+  <li><code>.container-fluid</code>: Expands to 100% of the width of the viewport.</li>
+  <li><code>.row</code>: Wrapper for columns with automatic negative margins for spacing.</li>
+</ul>
+
+<h3>Responsive Classes</h3>
+
+<p>
+  Bootstrap includes a variety of responsive utility classes for visibility, spacing, alignment, flex behaviors, and more. These can adapt elements' behavior based on screen size.
+</p>
+
+<pre><code>
+&lt;div class="d-none d-md-block"&gt;Visible on md and larger screens&lt;/div&gt;
+&lt;div class="text-center text-lg-start"&gt;Text alignment changes with screen size&lt;/div&gt;
+</code></pre>
+
+<h3>Mobile-First Approach</h3>
+
+<p>
+  Bootstrap is designed with a mobile-first philosophy, meaning styles are applied first to smaller devices and scale up as needed.
+</p>
+
+<h3>Combining Layout Components</h3>
+
+<p>
+  You can combine rows, columns, cards, navbars, and modals to construct complete pages that scale beautifully across all devices. Try nesting rows, adjusting breakpoints, and mixing grid sizes to suit your design.
+</p>
+
+<p>
+  With a few utility classes and a solid understanding of the grid, you’ll be able to build any responsive layout you need.
+</p>
+
 ## CENTERING CONTENT
 
 ## FIXED FOOTERS AND STICKY ELEMENTS
