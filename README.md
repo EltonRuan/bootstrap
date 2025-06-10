@@ -1786,6 +1786,62 @@ sass custom.scss custom.css
 
 ## CENTERING CONTENT
 
+<p>
+  Centering elements is a common requirement in web design, and Bootstrap provides several utilities to make this task straightforward—whether you're centering text, blocks, or entire sections both vertically and horizontally.
+</p>
+
+<h3>Centering Text Horizontally</h3>
+
+<p>Use the <code>.text-center</code> class to horizontally align text:</p>
+
+<pre><code>&lt;div class="text-center"&gt;
+  This text is centered horizontally.
+&lt;/div&gt;
+</code></pre>
+
+<h3>Centering Block Elements Horizontally</h3>
+
+<p>To center block-level elements, use the combination of <code>mx-auto</code> and a defined width (or <code>col-*</code> in the grid):</p>
+
+<pre><code>&lt;div class="w-50 mx-auto"&gt;
+  This block is horizontally centered.
+&lt;/div&gt;
+</code></pre>
+
+<h3>Centering Vertically with Flexbox</h3>
+
+<p>
+  For vertical alignment, Bootstrap uses Flexbox utilities. Use <code>d-flex</code>, <code>align-items-center</code>, and <code>justify-content-center</code>:
+</p>
+
+<pre><code>&lt;div class="d-flex align-items-center justify-content-center" style="height: 200px;"&gt;
+  &lt;div&gt;Centered both vertically and horizontally&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Centering in Grid Layouts</h3>
+
+<p>Use Bootstrap's grid system to center columns with auto margins:</p>
+
+<pre><code>&lt;div class="row"&gt;
+  &lt;div class="col-6 mx-auto"&gt;
+    This column is centered.
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Text and Content Alignment Utilities</h3>
+
+<ul>
+  <li><code>.text-start</code>, <code>.text-center</code>, <code>.text-end</code> for horizontal text alignment.</li>
+  <li><code>.justify-content-</code> and <code>.align-items-</code> for Flexbox containers.</li>
+  <li><code>.mx-auto</code> and <code>.my-auto</code> for margin-based centering.</li>
+</ul>
+
+<p>
+  Whether you are working on small components or full-page layouts, Bootstrap's centering utilities allow you to position content easily and responsively.
+</p>
+
 ## FIXED FOOTERS AND STICKY ELEMENTS
 
 ## OFFCANVAS AND SIDEBARS
