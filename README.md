@@ -1844,6 +1844,64 @@ sass custom.scss custom.css
 
 ## FIXED FOOTERS AND STICKY ELEMENTS
 
+
+<p>
+  Bootstrap provides utility classes and layout strategies to help you create fixed footers and sticky elements that remain visible while scrolling. These features are useful for navigation bars, action buttons, footers, and more.
+</p>
+
+<h3>Fixed Footer</h3>
+
+<p>
+  To keep a footer fixed at the bottom of the viewport, use the <code>fixed-bottom</code> class:
+</p>
+
+<pre><code>&lt;footer class="bg-dark text-white text-center py-3 fixed-bottom"&gt;
+  This is a fixed footer.
+&lt;/footer&gt;
+</code></pre>
+
+<p>
+  Make sure that your page content doesn't overlap with the fixed footer. Add bottom padding to the main content if necessary.
+</p>
+
+<h3>Sticky Top Element</h3>
+
+<p>
+  To make an element stay at the top of the page when scrolling, use the <code>sticky-top</code> class:
+</p>
+
+<pre><code>&lt;div class="sticky-top bg-warning p-3"&gt;
+  I stick to the top when you scroll!
+&lt;/div&gt;
+</code></pre>
+
+<h3>Sticky Sidebar or Section</h3>
+
+<p>
+  You can also apply <code>position: sticky</code> to other elements like sidebars:
+</p>
+
+<pre><code>&lt;aside class="position-sticky top-0" style="height: 100vh;"&gt;
+  &lt;!-- Sidebar content --&gt;
+&lt;/aside&gt;
+</code></pre>
+
+<p>
+  Sticky elements require a parent with relative or static positioning and sufficient height to allow scrolling behavior.
+</p>
+
+<h3>Additional Tips</h3>
+
+<ul>
+  <li>Use utility classes like <code>.top-0</code>, <code>.bottom-0</code>, <code>.start-0</code>, and <code>.end-0</code> for precise placement.</li>
+  <li>Combine <code>position-fixed</code> with <code>z-index</code> utilities to control layering.</li>
+  <li>For mobile responsiveness, test sticky and fixed elements in different viewports.</li>
+</ul>
+
+<p>
+  These layout tools improve navigation and accessibility by keeping essential elements visible as users interact with your page.
+</p>
+
 ## OFFCANVAS AND SIDEBARS
 
 ## USING BOOTSTRAP JAVASCRIPT COMPONENTS
