@@ -1904,6 +1904,59 @@ sass custom.scss custom.css
 
 ## OFFCANVAS AND SIDEBARS
 
+<p>
+  The <strong>Offcanvas</strong> component in Bootstrap allows you to create hidden panels (like sidebars or menus) that slide into view from the side of the screen. It's a powerful tool for responsive and mobile-friendly UI design.
+</p>
+
+<h3>Basic Offcanvas Example</h3>
+
+<p>Here’s how to create a simple offcanvas sidebar that opens from the left:</p>
+
+<pre><code>&lt;button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"&gt;
+  Open Sidebar
+&lt;/button&gt;
+
+&lt;div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"&gt;
+  &lt;div class="offcanvas-header"&gt;
+    &lt;h5 class="offcanvas-title" id="offcanvasExampleLabel"&gt;Sidebar Menu&lt;/h5&gt;
+    &lt;button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="offcanvas-body"&gt;
+    &lt;p&gt;You can place navigation links or additional content here.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Offcanvas Positioning</h3>
+
+<ul>
+  <li><code>.offcanvas-start</code> – slides in from the left (default)</li>
+  <li><code>.offcanvas-end</code> – slides in from the right</li>
+  <li><code>.offcanvas-top</code> – slides down from the top</li>
+  <li><code>.offcanvas-bottom</code> – slides up from the bottom</li>
+</ul>
+
+<h3>Customization Tips</h3>
+
+<ul>
+  <li>Use utility classes like <code>bg-dark</code>, <code>text-light</code>, <code>p-4</code> to style your offcanvas content.</li>
+  <li>Control width and height using custom CSS or Bootstrap’s sizing utilities.</li>
+  <li>Combine offcanvas with navigation menus for responsive mobile views.</li>
+</ul>
+
+<h3>When to Use Offcanvas</h3>
+
+<ul>
+  <li>Mobile navigation menus</li>
+  <li>Filters and search panels</li>
+  <li>Account or user profile settings</li>
+  <li>Custom slide-in forms</li>
+</ul>
+
+<p>
+  Bootstrap's offcanvas component is built with accessibility and responsiveness in mind, making it a great tool for modern interface design.
+</p>
+
 ## USING BOOTSTRAP JAVASCRIPT COMPONENTS
 
 ## TOOLTIPS, TOASTS, AND CAROUSELS
