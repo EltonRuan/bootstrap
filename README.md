@@ -1959,6 +1959,71 @@ sass custom.scss custom.css
 
 ## USING BOOTSTRAP JAVASCRIPT COMPONENTS
 
+<p>
+  Bootstrap includes a suite of powerful JavaScript components to enhance interactivity and user experience. These components are built using modern JavaScript and can be easily integrated without needing external libraries like jQuery (from Bootstrap 5 onward).
+</p>
+
+<h3>How to Use</h3>
+<p>
+  To use Bootstrap JS components, make sure you’ve included the Bootstrap JavaScript file either via CDN or your local setup:
+</p>
+
+<pre><code>&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<p>
+  Alternatively, if you're using a bundler like Vite, Webpack, or Laravel Mix, you can import only the components you need.
+</p>
+
+<h3>Common JavaScript Components</h3>
+<ul>
+  <li><strong>Modal</strong> – Pop-up overlays for dialogs and content.</li>
+  <li><strong>Tooltip</strong> – Small hover-based informational boxes.</li>
+  <li><strong>Popover</strong> – Similar to tooltips but with more content.</li>
+  <li><strong>Toast</strong> – Lightweight notifications that slide into view.</li>
+  <li><strong>Collapse</strong> – Toggle visibility of content sections.</li>
+  <li><strong>Dropdown</strong> – Menus for navigation or actions.</li>
+  <li><strong>Carousel</strong> – Slideshows for images or custom content.</li>
+  <li><strong>Scrollspy</strong> – Automatically update navs based on scroll position.</li>
+</ul>
+
+<h3>Example: Modal</h3>
+
+<pre><code>&lt;!-- Button to trigger --&gt;
+&lt;button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"&gt;
+  Launch Modal
+&lt;/button&gt;
+
+&lt;!-- Modal HTML --&gt;
+&lt;div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"&gt;
+  &lt;div class="modal-dialog"&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;h5 class="modal-title" id="exampleModalLabel"&gt;Modal Title&lt;/h5&gt;
+        &lt;button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"&gt;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+        This is the modal body content.
+      &lt;/div&gt;
+      &lt;div class="modal-footer"&gt;
+        &lt;button type="button" class="btn btn-secondary" data-bs-dismiss="modal"&gt;Close&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Tips</h3>
+<ul>
+  <li>Use <code>data-bs-toggle</code> and <code>data-bs-target</code> attributes for declarative control.</li>
+  <li>For more control, use JavaScript API methods like <code>Modal.show()</code> or <code>Tooltip.enable()</code>.</li>
+  <li>Most components emit events like <code>shown.bs.modal</code> and <code>hidden.bs.toast</code> for custom scripting.</li>
+</ul>
+
+<p>
+  Bootstrap’s JavaScript components are designed for flexibility, modularity, and accessibility, providing essential functionality without heavy scripting.
+</p>
+
 ## TOOLTIPS, TOASTS, AND CAROUSELS
 
 ## DROPDOWNS AND COLLAPSIBLES
