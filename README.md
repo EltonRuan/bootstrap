@@ -2104,6 +2104,52 @@ sass custom.scss custom.css
 
 ## DROPDOWNS AND COLLAPSIBLES
 
+<p>
+  Bootstrap provides interactive elements like <strong>dropdowns</strong> and <strong>collapsibles</strong> to create dynamic and user-friendly interfaces without requiring external JavaScript libraries.
+</p>
+
+<h3>Dropdowns</h3>
+<p>
+  Dropdowns are toggleable menus used for navigation or to group actions in a compact way.
+</p>
+
+<pre><code>&lt;div class="dropdown"&gt;
+  &lt;button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false"&gt;
+    Dropdown button
+  &lt;/button&gt;
+  &lt;ul class="dropdown-menu" aria-labelledby="dropdownMenuButton"&gt;
+    &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>
+  You can align the dropdown menu, add headers, dividers, and make it responsive using utility classes.
+</p>
+
+<h3>Collapsibles</h3>
+<p>
+  Collapsibles allow you to hide and show content using a simple toggle. Ideal for FAQs, expandable panels, or minimizing clutter.
+</p>
+
+<pre><code>&lt;p&gt;
+  &lt;a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"&gt;
+    Toggle Collapse
+  &lt;/a&gt;
+&lt;/p&gt;
+&lt;div class="collapse" id="collapseExample"&gt;
+  &lt;div class="card card-body"&gt;
+    This content is hidden by default and shown when triggered.
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>
+  Bootstrap’s collapse feature can also be used with navigation menus, accordions, and more. You can control its behavior programmatically using the <code>Collapse</code> JavaScript API.
+</p>
+
 ## DATA ATTRIBUTES VS MANUAL INIT
 
 ## HANDLING MODALS PROGRAMMATICALLY
