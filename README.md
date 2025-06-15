@@ -2026,6 +2026,82 @@ sass custom.scss custom.css
 
 ## TOOLTIPS, TOASTS, AND CAROUSELS
 
+<p>
+  Bootstrap offers dynamic UI components such as tooltips, toasts, and carousels, which enhance user interaction with subtle yet effective visual feedback. Each one can be initialized via data attributes or JavaScript.
+</p>
+
+<h3>Tooltips</h3>
+<p>
+  Tooltips are small, hover-activated text popups commonly used to describe a UI element.
+</p>
+
+<pre><code>&lt;button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip text"&gt;
+  Hover me
+&lt;/button&gt;
+
+&lt;script&gt;
+  // Initialize all tooltips on the page
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl =&gt; new bootstrap.Tooltip(tooltipTriggerEl))
+&lt;/script&gt;
+</code></pre>
+
+<h3>Toasts</h3>
+<p>
+  Toasts are lightweight notifications that slide into view. They’re perfect for non-intrusive feedback.
+</p>
+
+<pre><code>&lt;div class="toast show" role="alert" aria-live="assertive" aria-atomic="true"&gt;
+  &lt;div class="toast-header"&gt;
+    &lt;strong class="me-auto"&gt;Bootstrap&lt;/strong&gt;
+    &lt;small&gt;Just now&lt;/small&gt;
+    &lt;button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="toast-body"&gt;
+    Hello, this is a toast message!
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  // Optionally initialize manually
+  const toastEl = document.querySelector('.toast');
+  const toast = new bootstrap.Toast(toastEl);
+  toast.show();
+&lt;/script&gt;
+</code></pre>
+
+<h3>Carousels</h3>
+<p>
+  Carousels are useful for showcasing images, content sliders, or highlights.
+</p>
+
+<pre><code>&lt;div id="carouselExample" class="carousel slide" data-bs-ride="carousel"&gt;
+  &lt;div class="carousel-inner"&gt;
+    &lt;div class="carousel-item active"&gt;
+      &lt;img src="img1.jpg" class="d-block w-100" alt="..."&gt;
+    &lt;/div&gt;
+    &lt;div class="carousel-item"&gt;
+      &lt;img src="img2.jpg" class="d-block w-100" alt="..."&gt;
+    &lt;/div&gt;
+    &lt;div class="carousel-item"&gt;
+      &lt;img src="img3.jpg" class="d-block w-100" alt="..."&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev"&gt;
+    &lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt;&lt;/span&gt;
+    &lt;span class="visually-hidden"&gt;Previous&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next"&gt;
+    &lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&lt;/span&gt;
+    &lt;span class="visually-hidden"&gt;Next&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>
+  These components add a polished and modern layer to your web interface and are fully customizable through Bootstrap's API and classes.
+</p>
+
 ## DROPDOWNS AND COLLAPSIBLES
 
 ## DATA ATTRIBUTES VS MANUAL INIT
