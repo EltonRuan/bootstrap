@@ -2152,6 +2152,50 @@ sass custom.scss custom.css
 
 ## DATA ATTRIBUTES VS MANUAL INIT
 
+<p>
+  Bootstrap provides two main ways to activate its JavaScript-powered components: using <strong>data attributes</strong> or initializing them <strong>manually with JavaScript</strong>. Both approaches achieve the same effect, but choosing one depends on your project complexity and control needs.
+</p>
+
+<h3>Using Data Attributes</h3>
+<p>
+  The easiest and most declarative way to use Bootstrap components. You add special <code>data-bs-*</code> attributes directly in your HTML.
+</p>
+
+<pre><code>&lt;button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"&gt;
+  Launch Modal
+&lt;/button&gt;
+</code></pre>
+
+<p>
+  This automatically enables the component without any JavaScript. It's simple and ideal for basic UI elements.
+</p>
+
+<h3>Manual Initialization with JavaScript</h3>
+<p>
+  For dynamic or more complex behavior, you can manually initialize components via JavaScript. This provides greater control and customization.
+</p>
+
+<pre><code>&lt;button id="modalBtn" class="btn btn-primary"&gt;Open Modal&lt;/button&gt;
+
+&lt;script&gt;
+  const modalElement = document.getElementById('exampleModal');
+  const modal = new bootstrap.Modal(modalElement);
+  document.getElementById('modalBtn').addEventListener('click', () =&gt; {
+    modal.show();
+  });
+&lt;/script&gt;
+</code></pre>
+
+<h3>When to Use Each</h3>
+<ul>
+  <li><strong>Data attributes:</strong> Great for simple, static pages or quick prototyping.</li>
+  <li><strong>Manual init:</strong> Ideal when components are created dynamically, require event listeners, or need conditional logic.</li>
+</ul>
+
+<p>
+  You can even combine both methods, though it's usually better to stick with one for consistency.
+</p>
+
 ## HANDLING MODALS PROGRAMMATICALLY
 
 ## THEME CUSTOMIZATION WITH SASS VARIABLES
