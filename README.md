@@ -2198,6 +2198,70 @@ sass custom.scss custom.css
 
 ## HANDLING MODALS PROGRAMMATICALLY
 
+<p>
+  Bootstrap allows you to control modals not only through data attributes but also programmatically using JavaScript. This is especially useful when you need to show, hide, or toggle a modal based on specific logic or events in your application.
+</p>
+
+<h3>Showing a Modal with JavaScript</h3>
+<pre><code>&lt;button id="openModalBtn" class="btn btn-primary"&gt;Open Modal&lt;/button&gt;
+
+&lt;div class="modal fade" id="myModal" tabindex="-1" aria-hidden="true"&gt;
+  &lt;div class="modal-dialog"&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;h5 class="modal-title"&gt;Modal Title&lt;/h5&gt;
+        &lt;button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"&gt;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+        This modal was opened programmatically!
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  const modalElement = document.getElementById('myModal');
+  const modalInstance = new bootstrap.Modal(modalElement);
+  
+  document.getElementById('openModalBtn').addEventListener('click', () =&gt; {
+    modalInstance.show();
+  });
+&lt;/script&gt;
+</code></pre>
+
+<h3>Hiding a Modal</h3>
+<pre><code>modalInstance.hide();</code></pre>
+
+<h3>Toggling a Modal</h3>
+<p>
+  Bootstrap doesn't provide a native <code>toggle()</code> method for modals, so you need to manage the state manually:
+</p>
+<pre><code>
+if (modalElement.classList.contains('show')) {
+  modalInstance.hide();
+} else {
+  modalInstance.show();
+}
+</code></pre>
+
+<h3>Listening to Modal Events</h3>
+<p>
+  You can hook into modal lifecycle events to run custom logic:
+</p>
+<pre><code>
+modalElement.addEventListener('show.bs.modal', () =&gt; {
+  console.log('Modal is about to be shown');
+});
+
+modalElement.addEventListener('hidden.bs.modal', () =&gt; {
+  console.log('Modal was hidden');
+});
+</code></pre>
+
+<p>
+  Programmatically managing modals gives you full control over the user experience, making your application more dynamic and responsive to user actions.
+</p>
+
 ## THEME CUSTOMIZATION WITH SASS VARIABLES
 
 ## CREATING A CUSTOM THEME
