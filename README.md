@@ -2264,6 +2264,65 @@ modalElement.addEventListener('hidden.bs.modal', () =&gt; {
 
 ## THEME CUSTOMIZATION WITH SASS VARIABLES
 
+<p>
+  Bootstrap was built with Sass, which makes it extremely customizable. Instead of overwriting classes with additional CSS, you can modify Bootstrap’s core design system by redefining its Sass variables before compiling.
+</p>
+
+<h3>Why Use Sass Variables?</h3>
+<ul>
+  <li>Change colors, spacings, fonts, and more without writing additional CSS.</li>
+  <li>Maintain consistency across components.</li>
+  <li>Easily adapt Bootstrap to your brand’s visual identity.</li>
+</ul>
+
+<h3>Sass Files Structure (Example)</h3>
+<pre><code>
+/custom-bootstrap/
+├── scss/
+│   ├── _custom-variables.scss   // Your overrides go here
+│   └── custom-bootstrap.scss    // Main Sass entry file
+</code></pre>
+
+<h3>Example of Overriding Variables</h3>
+<p>Create a file like <code>_custom-variables.scss</code>:</p>
+<pre><code>
+// Change the primary color
+$primary: #ff5722;
+
+// Change font family
+$font-family-base: 'Poppins', sans-serif;
+
+// Spacing scale
+$spacer: 1rem;
+</code></pre>
+
+<h3>Main SCSS File (custom-bootstrap.scss)</h3>
+<p>Import Bootstrap’s source files after your custom variables:</p>
+<pre><code>
+// Override variables first
+@import 'custom-variables';
+
+// Then import Bootstrap
+@import '~bootstrap/scss/bootstrap';
+</code></pre>
+
+<h3>Compiling with a Tool (e.g., Vite, Webpack, Laravel Mix)</h3>
+<p>You’ll need a Sass compiler to generate the final CSS. Example with <code>npm</code>:</p>
+<pre><code>npm install sass bootstrap</code></pre>
+
+<p>Then compile:</p>
+<pre><code>sass scss/custom-bootstrap.scss css/bootstrap-custom.css</code></pre>
+
+<h3>Tips</h3>
+<ul>
+  <li>Refer to <code>_variables.scss</code> in Bootstrap’s source to see all customizable options.</li>
+  <li>Only import what you need using partials like <code>_buttons.scss</code> or <code>_navbar.scss</code>.</li>
+</ul>
+
+<p>
+  Customizing Bootstrap with Sass variables allows you to create a unique design system that stays consistent, clean, and maintainable without relying heavily on custom CSS overrides.
+</p>
+
 ## CREATING A CUSTOM THEME
 
 ## OVERRIDING DEFAULT STYLES
