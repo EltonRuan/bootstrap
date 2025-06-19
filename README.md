@@ -2325,6 +2325,74 @@ $spacer: 1rem;
 
 ## CREATING A CUSTOM THEME
 
+<p>
+  Creating a custom Bootstrap theme involves modifying the default design tokens (Sass variables), importing only the components you need, and compiling everything into your own stylesheet. This gives you full control over the look and feel of your application while maintaining the consistency and responsiveness of Bootstrap.
+</p>
+
+<h3>Steps to Create a Custom Theme</h3>
+
+<ol>
+  <li>
+    <strong>Install Bootstrap via NPM</strong><br>
+    <code>npm install bootstrap</code><br>
+    Or use <code>yarn add bootstrap</code>.
+  </li>
+
+  <li>
+    <strong>Create a Custom SCSS File</strong><br>
+    Create a file named <code>custom.scss</code> in your project:
+<pre><code>// 1. Override Bootstrap default variables before importing
+$primary: #ff6600;
+$font-family-base: 'Poppins', sans-serif;
+$body-bg: #fefefe;
+$border-radius: .75rem;
+
+// 2. Optionally import only the components you use
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/cards";
+// Or import the full Bootstrap framework:
+@import "node_modules/bootstrap/scss/bootstrap";
+</code></pre>
+  </li>
+
+  <li>
+    <strong>Compile Your SCSS</strong><br>
+    Use a compiler like <code>sass</code>, <code>webpack</code>, <code>Vite</code>, or <code>Laravel Mix</code> to convert SCSS to CSS:
+    <br>
+    <code>sass custom.scss custom.css</code>
+  </li>
+
+  <li>
+    <strong>Link Your Custom CSS in HTML</strong><br>
+<pre><code>&lt;link href="path/to/custom.css" rel="stylesheet"&gt;
+</code></pre>
+  </li>
+</ol>
+
+<h3>Folder Example</h3>
+<pre><code>project/
+├── scss/
+│   └── custom.scss
+├── css/
+│   └── custom.css
+├── index.html
+</code></pre>
+
+<h3>Tips for Theming</h3>
+<ul>
+  <li>Start by changing primary colors and fonts for the fastest brand adaptation.</li>
+  <li>Use the <code>:root</code> selector with CSS variables if you plan to swap themes dynamically.</li>
+  <li>Always keep Bootstrap's structure in mind to avoid conflicts with default styles.</li>
+</ul>
+
+<p>
+  With a custom theme, your Bootstrap-based website or app will not only look unique but will also reflect your brand identity and design principles—without sacrificing performance or responsiveness.
+</p>
+
 ## OVERRIDING DEFAULT STYLES
 
 ## MIXING BOOTSTRAP WITH CUSTOM CSS
