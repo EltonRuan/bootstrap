@@ -2395,6 +2395,58 @@ $border-radius: .75rem;
 
 ## OVERRIDING DEFAULT STYLES
 
+<p>
+  While Bootstrap provides a powerful default theme, you may often need to override specific styles to better fit your design requirements. There are several methods for overriding Bootstrap’s styles, each suitable for different situations.
+</p>
+
+<h3>Common Methods to Override Styles</h3>
+
+<ol>
+  <li>
+    <strong>Using Your Own CSS File</strong><br>
+    The simplest method is to include your own stylesheet after Bootstrap's CSS in your HTML. This ensures your rules take precedence.
+<pre><code>&lt;link href="bootstrap.min.css" rel="stylesheet"&gt;
+&lt;link href="custom.css" rel="stylesheet"&gt;</code></pre>
+  </li>
+
+  <li>
+    <strong>Using More Specific Selectors</strong><br>
+    Bootstrap uses general class names, so you can override them with more specific CSS selectors.
+<pre><code>.navbar.navbar-dark {
+  background-color: #ff6600 !important;
+}</code></pre>
+  </li>
+
+  <li>
+    <strong>Using <code>!important</code> (Cautiously)</strong><br>
+    As a last resort, you can use <code>!important</code> to force your styles to override Bootstrap’s. Use it sparingly to avoid maintenance issues.
+<pre><code>.btn-primary {
+  background-color: #ff6600 !important;
+  border-color: #ff6600 !important;
+}</code></pre>
+  </li>
+
+  <li>
+    <strong>Overriding with Sass Variables</strong><br>
+    If you’re compiling Bootstrap with Sass, override the variables before importing Bootstrap's SCSS:
+<pre><code>// custom.scss
+$primary: #ff6600;
+@import "bootstrap";</code></pre>
+  </li>
+</ol>
+
+<h3>Best Practices</h3>
+<ul>
+  <li>Minimize the use of <code>!important</code> where possible.</li>
+  <li>Keep overrides in a dedicated file (e.g., <code>custom.css</code> or <code>overrides.scss</code>).</li>
+  <li>Use developer tools to inspect which classes are being applied and where conflicts occur.</li>
+  <li>Document your overrides for better collaboration and maintenance.</li>
+</ul>
+
+<p>
+  Overriding Bootstrap styles gives you the flexibility to make any design your own, while still taking advantage of the framework’s responsiveness and utility classes.
+</p>
+
 ## MIXING BOOTSTRAP WITH CUSTOM CSS
 
 ## USING BOOTSTRAP WITH TAILWIND
