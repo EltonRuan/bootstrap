@@ -2449,6 +2449,72 @@ $primary: #ff6600;
 
 ## MIXING BOOTSTRAP WITH CUSTOM CSS
 
+<p>
+  One of Bootstrap’s strengths is its flexibility—allowing you to combine its powerful prebuilt components with your own custom styles. This hybrid approach helps you achieve unique designs without starting from scratch.
+</p>
+
+<h3>Why Mix Bootstrap with Custom CSS?</h3>
+<ul>
+  <li>To apply your brand's identity and unique design elements.</li>
+  <li>To create features not directly available in Bootstrap.</li>
+  <li>To override or adjust default Bootstrap behavior.</li>
+  <li>To improve maintainability by separating custom styles from framework code.</li>
+</ul>
+
+<h3>How to Organize Custom CSS with Bootstrap</h3>
+
+<ol>
+  <li>
+    <strong>Create a separate custom CSS file</strong><br>
+    Save your custom styles in a file like <code>custom.css</code> and include it after the Bootstrap CSS.
+<pre><code>&lt;link href="bootstrap.min.css" rel="stylesheet"&gt;
+&lt;link href="custom.css" rel="stylesheet"&gt;</code></pre>
+  </li>
+
+  <li>
+    <strong>Use semantic class names for custom styles</strong><br>
+    Avoid naming conflicts with Bootstrap by using unique class names.
+<pre><code>.custom-header {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff3e0;
+  border-bottom: 2px solid #ffa726;
+}</code></pre>
+  </li>
+
+  <li>
+    <strong>Utilize Bootstrap utility classes where possible</strong><br>
+    You can still use Bootstrap spacing, layout, and typography classes alongside your own.
+<pre><code>&lt;div class="custom-header p-3 text-center"&gt;Welcome!&lt;/div&gt;</code></pre>
+  </li>
+
+  <li>
+    <strong>Structure your CSS for maintainability</strong><br>
+    Organize your custom CSS into logical sections (e.g., typography, layout, components) and add comments.
+<pre><code>/* Typography */
+.custom-heading {
+  font-weight: 700;
+  color: #ff6600;
+}
+
+/* Buttons */
+.btn-orange {
+  background-color: #ff6600;
+  color: white;
+}</code></pre>
+  </li>
+</ol>
+
+<h3>Tips</h3>
+<ul>
+  <li>Use browser dev tools to inspect and experiment with your styles.</li>
+  <li>Stick to a naming convention for your custom classes (e.g., <code>.custom-</code> or <code>.myapp-</code>).</li>
+  <li>If you're using Sass, separate overrides and custom styles into different files for better clarity.</li>
+</ul>
+
+<p>
+  Mixing Bootstrap with your own CSS allows for full creative control while still leveraging the power and reliability of the framework. With careful organization and best practices, your project will remain scalable and maintainable.
+</p>
+
 ## USING BOOTSTRAP WITH TAILWIND
 
 ## MOBILE-FIRST DESIGN TIPS
