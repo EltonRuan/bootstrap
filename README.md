@@ -2517,6 +2517,70 @@ $primary: #ff6600;
 
 ## USING BOOTSTRAP WITH TAILWIND
 
+<p>
+  Although <strong>Bootstrap</strong> and <strong>Tailwind CSS</strong> are two very different CSS frameworks—one component-based and the other utility-first—there may be cases where you want to use both in the same project. This section explains how to integrate them carefully and effectively.
+</p>
+
+<h3>Why Combine Bootstrap and Tailwind?</h3>
+<ul>
+  <li>Leverage Bootstrap’s prebuilt components and Tailwind’s utility classes simultaneously.</li>
+  <li>Gradually migrate from one framework to another.</li>
+  <li>Add more granular styling to Bootstrap components using Tailwind utilities.</li>
+</ul>
+
+<h3>⚠Key Considerations Before Mixing</h3>
+<ul>
+  <li><strong>Class Conflicts:</strong> Both frameworks define some common class names like <code>container</code> or <code>btn</code>. Tailwind may override Bootstrap or vice versa.</li>
+  <li><strong>Bundle Size:</strong> Including both frameworks can significantly increase the size of your CSS output.</li>
+  <li><strong>Maintenance Complexity:</strong> Mixing approaches may confuse new developers or make the codebase harder to maintain.</li>
+</ul>
+
+<h3>How to Use Bootstrap with Tailwind</h3>
+
+<ol>
+  <li>
+    <strong>Install Both Frameworks</strong><br>
+    You can install via CDN or using a bundler like Vite or Webpack.
+<pre><code>// Tailwind via npm
+npm install -D tailwindcss
+
+// Bootstrap via npm
+npm install bootstrap</code></pre>
+  </li>
+
+  <li>
+    <strong>Import Both in Your CSS</strong><br>
+    If using a custom <code>main.css</code> or <code>app.scss</code>:
+<pre><code>@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "bootstrap/scss/bootstrap";</code></pre>
+    <p>Tip: Import Bootstrap <strong>after</strong> Tailwind if you want Bootstrap styles to take precedence.</p>
+  </li>
+
+  <li>
+    <strong>Use Tailwind and Bootstrap Separately</strong><br>
+    You can use Tailwind for layout and spacing while keeping Bootstrap for components:
+<pre><code>&lt;div class="container mx-auto mt-10"&gt;
+  &lt;button class="btn btn-primary"&gt;Bootstrap Button&lt;/button&gt;
+  &lt;p class="text-center text-gray-600 mt-4"&gt;This is styled with Tailwind.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+  </li>
+</ol>
+
+<h3>Best Practices</h3>
+<ul>
+  <li>Avoid mixing classes from both frameworks in the same element.</li>
+  <li>Use clear comments or conventions to separate Tailwind and Bootstrap components.</li>
+  <li>If possible, choose one framework as primary and the other as secondary.</li>
+</ul>
+
+<p>
+  While not always recommended for production-scale projects, combining Bootstrap with Tailwind can be useful for experimentation, migration, or specific hybrid needs. Just make sure to plan and document your structure for future maintainability.
+</p>
+
+
 ## MOBILE-FIRST DESIGN TIPS
 
 ## ACCESSIBILITY IN BOOTSTRAP
