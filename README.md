@@ -2583,6 +2583,75 @@ npm install bootstrap</code></pre>
 
 ## MOBILE-FIRST DESIGN TIPS
 
+<p>
+  Bootstrap follows a <strong>mobile-first</strong> approach, meaning styles are applied to mobile devices by default and then enhanced for larger screens using media queries. This philosophy improves performance, responsiveness, and accessibility.
+</p>
+
+<h3>Why Mobile-First?</h3>
+<ul>
+  <li>Majority of users browse from mobile devices.</li>
+  <li>Performance is better on smaller, limited-bandwidth devices.</li>
+  <li>It’s easier to progressively enhance than to scale down.</li>
+</ul>
+
+<h3>Best Practices for Mobile-First Design</h3>
+
+<ul>
+  <li>
+    <strong>Start with the Smallest Screen</strong><br>
+    Design and test your layout using the default (mobile) styles first, then add responsiveness for tablets and desktops.
+  </li>
+
+  <li>
+    <strong>Use Bootstrap’s Grid Breakpoints</strong><br>
+    Utilize responsive classes like <code>.col-12</code>, <code>.col-md-6</code>, <code>.col-lg-4</code> to change layout based on screen size.
+<pre><code>&lt;div class="row"&gt;
+  &lt;div class="col-12 col-md-6 col-lg-4"&gt;Responsive Column&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </li>
+
+  <li>
+    <strong>Use Utility Classes Responsively</strong><br>
+    Tailor spacing, alignment, and visibility with responsive utility classes like:
+<pre><code>.d-none d-md-block
+.mt-2 mt-lg-5
+.text-center text-sm-start</code></pre>
+  </li>
+
+  <li>
+    <strong>Test on Real Devices or Emulators</strong><br>
+    Use browser dev tools and device emulators to check how your layout adapts at each breakpoint.
+  </li>
+
+  <li>
+    <strong>Avoid Fixed Widths</strong><br>
+    Use percentages, viewport units (<code>vw</code>, <code>vh</code>), and Bootstrap’s fluid containers to ensure adaptability.
+  </li>
+
+  <li>
+    <strong>Prioritize Touch-Friendly Elements</strong><br>
+    Ensure buttons are large enough and spaced well for touch interaction.
+  </li>
+
+  <li>
+    <strong>Optimize Content Hierarchy</strong><br>
+    On smaller screens, place the most important information first. Hide or collapse less critical content.
+  </li>
+</ul>
+
+<h3>Bonus Tip</h3>
+<p>
+  Combine <code>order</code> and <code>flex</code> classes to reorder elements visually without changing the HTML structure:
+<pre><code>&lt;div class="d-flex flex-column flex-md-row"&gt;
+  &lt;div class="order-2 order-md-1"&gt;Main Content&lt;/div&gt;
+  &lt;div class="order-1 order-md-2"&gt;Sidebar&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</p>
+
+<p>
+  Applying mobile-first principles ensures your website is inclusive, performant, and user-friendly across all devices. It's not just about shrinking things down—it's about delivering a better experience, everywhere.
+</p>
+
 ## ACCESSIBILITY IN BOOTSTRAP
 
 ## PERFORMANCE OPTIMIZATION
