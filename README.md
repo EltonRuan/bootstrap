@@ -2654,6 +2654,43 @@ npm install bootstrap</code></pre>
 
 ## ACCESSIBILITY IN BOOTSTRAP
 
+<p>
+  <strong>Accessibility (a11y)</strong> is a fundamental aspect of web development, ensuring that applications can be used by as many people as possible, including those with disabilities. Bootstrap comes with built-in support for accessible components, but developers must follow best practices to maintain and enhance usability.
+</p>
+
+<h3>Built-in Accessibility Features</h3>
+<ul>
+  <li><strong>ARIA attributes:</strong> Many Bootstrap components include default <code>aria-*</code> attributes to communicate behavior and state to assistive technologies.</li>
+  <li><strong>Keyboard support:</strong> Components like modals, dropdowns, and carousels are designed to be navigable using the keyboard.</li>
+  <li><strong>Semantic HTML:</strong> Bootstrap encourages the use of semantic elements such as <code>&lt;nav&gt;</code>, <code>&lt;button&gt;</code>, <code>&lt;form&gt;</code>, and <code>&lt;label&gt;</code>.</li>
+</ul>
+
+<h3>Developer Best Practices</h3>
+<ul>
+  <li><strong>Use Labels and Placeholders:</strong> Always associate <code>&lt;label&gt;</code> elements with form controls using the <code>for</code> attribute.</li>
+  <li><strong>Ensure Color Contrast:</strong> Check that text and background combinations meet WCAG standards. Tools like <a href="https://webaim.org/resources/contrastchecker/" target="_blank">WebAIM</a> can help.</li>
+  <li><strong>Don't Rely on Color Alone:</strong> Use text or icons to reinforce meaning for buttons, alerts, or status indicators.</li>
+  <li><strong>Test with a Screen Reader:</strong> Tools like NVDA or VoiceOver help validate if your app is usable without a visual interface.</li>
+  <li><strong>Provide Focus Indicators:</strong> Don't remove the default focus outline unless you’re providing a clear alternative.</li>
+</ul>
+
+<h3>ARIA Roles and Attributes</h3>
+<p>Bootstrap uses and supports ARIA roles and properties. You can also enhance components manually if needed:</p>
+<pre><code>&lt;button aria-label="Close" class="btn-close"&gt;&lt;/button&gt;
+&lt;div role="alert"&gt;This is an alert message.&lt;/div&gt;
+</code></pre>
+
+<h3>Tools for Accessibility Testing</h3>
+<ul>
+  <li><a href="https://wave.webaim.org/" target="_blank">WAVE – Web Accessibility Evaluation Tool</a></li>
+  <li><a href="https://developer.chrome.com/docs/lighthouse/accessibility/" target="_blank">Lighthouse (Chrome DevTools)</a></li>
+  <li><a href="https://axe.dev/" target="_blank">axe DevTools</a></li>
+</ul>
+
+<p>
+  Accessibility is not an optional feature—it's a responsibility. Bootstrap gives you a solid foundation, but your markup and logic determine the final experience. Always test with real tools and users whenever possible.
+</p>
+
 ## PERFORMANCE OPTIMIZATION
 
 ## COMMON MISTAKES TO AVOID
