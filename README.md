@@ -2752,6 +2752,77 @@ npm install bootstrap</code></pre>
 
 ## COMMON MISTAKES TO AVOID
 
+<p>
+  When working with Bootstrap, especially for beginners, it's easy to fall into a few common traps that can affect maintainability, performance, and responsiveness. This section highlights frequent mistakes and how to prevent them.
+</p>
+
+<h3>Overwriting Instead of Extending</h3>
+<ul>
+  <li>
+    Avoid constantly overriding Bootstrap classes in your custom CSS. Instead, use utility classes or extend Bootstrap with SASS variables when needed.
+  </li>
+</ul>
+
+<h3>Misusing the Grid System</h3>
+<ul>
+  <li>
+    Not wrapping columns with <code>.row</code> or forgetting <code>.container</code> can break layouts. Always follow the proper structure: <code>container > row > col</code>.
+  </li>
+</ul>
+
+<h3>Ignoring Breakpoints</h3>
+<ul>
+  <li>
+    Bootstrap is mobile-first. Avoid hardcoding widths or assuming layouts will look the same on all devices. Use responsive utility classes and test across viewports.
+  </li>
+</ul>
+
+<h3>Adding Inline Styles</h3>
+<ul>
+  <li>
+    Inline styles override Bootstrap and make the code harder to maintain. Use Bootstrap utility classes or external CSS files instead.
+  </li>
+</ul>
+
+<h3>Loading Duplicate Bootstrap Files</h3>
+<ul>
+  <li>
+    Ensure you’re not loading both the CDN and local Bootstrap files simultaneously. This can cause unpredictable behavior and style conflicts.
+  </li>
+</ul>
+
+<h3>Overcomplicating Customizations</h3>
+<ul>
+  <li>
+    For advanced customization, use Bootstrap’s SASS version. Avoid editing Bootstrap’s core files directly—this makes upgrades difficult.
+  </li>
+</ul>
+
+<h3>Forgetting JavaScript Dependencies</h3>
+<ul>
+  <li>
+    Many components (e.g., modals, dropdowns) require Bootstrap’s JavaScript and Popper.js. If components don’t work, check that these scripts are correctly included.
+  </li>
+</ul>
+
+<h3>Disabling Focus Outlines</h3>
+<ul>
+  <li>
+    Removing <code>outline: none</code> without a proper alternative reduces accessibility. Always provide clear focus indicators for keyboard users.
+  </li>
+</ul>
+
+<h3>Not Validating Forms</h3>
+<ul>
+  <li>
+    Bootstrap provides basic validation styles, but you need to implement real validation logic. Don’t rely on appearance alone.
+  </li>
+</ul>
+
+<p>
+  By avoiding these mistakes, you’ll ensure your Bootstrap projects are clean, responsive, accessible, and easier to maintain over time.
+</p>
+
 ## DEBUGGING LAYOUT ISSUES
 
 ## BOOTSTRAP NOT LOADING: COMMON CAUSES
