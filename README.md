@@ -2825,6 +2825,58 @@ npm install bootstrap</code></pre>
 
 ## DEBUGGING LAYOUT ISSUES
 
+<p>
+  Layout problems are common when working with any front-end framework, including Bootstrap. Thankfully, Bootstrap provides a structured system that makes troubleshooting easier when you know what to look for.
+</p>
+
+<h3>Check Your Grid Structure</h3>
+<ul>
+  <li>Ensure you are using the correct hierarchy: <code>.container</code> → <code>.row</code> → <code>.col</code>.</li>
+  <li>Make sure columns are properly closed and that rows are nested correctly inside containers.</li>
+  <li>Avoid placing <code>.col-*</code> directly inside a <code>.container</code> without a <code>.row</code>.</li>
+</ul>
+
+<h3>Use DevTools to Inspect Layout</h3>
+<ul>
+  <li>Open your browser's Developer Tools (usually F12) to inspect the layout.</li>
+  <li>Check for unintended margins, paddings, or overrides affecting alignment.</li>
+  <li>Use the “Elements” and “Computed” panels to trace styles and box models.</li>
+</ul>
+
+<h3>Missing or Conflicting CSS</h3>
+<ul>
+  <li>Make sure the Bootstrap CSS file is properly loaded before any custom CSS.</li>
+  <li>Look out for conflicting styles that might override Bootstrap defaults.</li>
+</ul>
+
+<h3>Verify Responsive Classes</h3>
+<ul>
+  <li>Double-check your use of responsive classes like <code>col-md-6</code>, <code>col-lg-4</code>, etc.</li>
+  <li>If something breaks at a specific screen size, check if the appropriate breakpoint is used.</li>
+</ul>
+
+<h3>Use Debug Utilities</h3>
+<ul>
+  <li>Bootstrap offers classes like <code>.d-none</code>, <code>.d-block</code>, and <code>.border</code> to help visualize and control layout behavior during development.</li>
+  <li>You can add borders to rows or columns temporarily to see how they behave: <code>.border</code>, <code>.bg-light</code>, etc.</li>
+</ul>
+
+<h3>Overflow and Fixed Elements</h3>
+<ul>
+  <li>Unexpected horizontal scroll? Check for elements with fixed widths or large content that break the layout.</li>
+  <li>Use <code>overflow-hidden</code> cautiously and only when necessary.</li>
+</ul>
+
+<h3>Reset Styles and Test Isolated</h3>
+<ul>
+  <li>If layout is broken, isolate the problem by removing components one by one or recreating the section in a clean file.</li>
+  <li>Try a “reset” of styles or temporarily disable custom CSS to identify the culprit.</li>
+</ul>
+
+<p>
+  Debugging layout issues takes patience and a methodical approach. Leverage browser tools, inspect your structure carefully, and remember that Bootstrap works best when its patterns are followed closely.
+</p>
+
 ## BOOTSTRAP NOT LOADING: COMMON CAUSES
 
 ## FRAMEWORK CONFLICTS
