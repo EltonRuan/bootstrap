@@ -2879,6 +2879,62 @@ npm install bootstrap</code></pre>
 
 ## BOOTSTRAP NOT LOADING: COMMON CAUSES
 
+<p>
+  If Bootstrap styles or components are not working as expected, it's usually due to a few common setup issues. This section helps identify and resolve the most frequent causes.
+</p>
+
+<h3>1. Incorrect CSS or JS File Paths</h3>
+<ul>
+  <li>Double-check that the paths to your <code>.css</code> and <code>.js</code> files are correct.</li>
+  <li>Use browser DevTools (F12) to verify the files are being loaded in the “Network” tab.</li>
+</ul>
+
+<h3>2. No Internet Connection (for CDN)</h3>
+<ul>
+  <li>If you're using CDN links (like from jsDelivr or BootstrapCDN), an internet connection is required.</li>
+  <li>Make sure your internet is active, or switch to local hosting.</li>
+</ul>
+
+<h3>3. JavaScript File Missing or Improperly Ordered</h3>
+<ul>
+  <li>Ensure that Bootstrap’s JavaScript file is loaded after its dependencies (e.g., Popper.js if needed).</li>
+  <li>Incorrect ordering of <code>&lt;script&gt;</code> tags can break interactive components like modals and dropdowns.</li>
+</ul>
+
+<h3>4. Missing Popper.js (for Tooltips, Dropdowns, etc.)</h3>
+<ul>
+  <li>Some Bootstrap components require <strong>Popper.js</strong> to function properly (e.g., tooltips, popovers, dropdowns).</li>
+  <li>Include Popper either from the CDN or via a bundler like Vite or Webpack.</li>
+</ul>
+
+<h3>5. Conflicting or Overriding Styles</h3>
+<ul>
+  <li>Another CSS file might be overriding Bootstrap styles.</li>
+  <li>Ensure your custom CSS is loaded after Bootstrap, and avoid overusing <code>!important</code>.</li>
+</ul>
+
+<h3>6. Using the Wrong Bootstrap Version</h3>
+<ul>
+  <li>Make sure the documentation you're following matches the Bootstrap version you’ve included (v4, v5, etc.).</li>
+  <li>Different versions have different class names and component structures.</li>
+</ul>
+
+<h3>7. File Caching in the Browser</h3>
+<ul>
+  <li>Sometimes, changes aren’t visible due to caching.</li>
+  <li>Try clearing the browser cache or performing a hard refresh (Ctrl + F5).</li>
+</ul>
+
+<h3>8. Using Incomplete Bootstrap Packages</h3>
+<ul>
+  <li>If installing via npm, make sure all dependencies (like <code>bootstrap</code> and <code>popper.js</code>) are correctly installed.</li>
+  <li>Run <code>npm install bootstrap @popperjs/core</code> for full functionality.</li>
+</ul>
+
+<p>
+  Most Bootstrap loading issues come down to small oversights in linking or ordering. Reviewing your file paths, order of scripts, and dependencies will typically solve the problem quickly.
+</p>
+
 ## FRAMEWORK CONFLICTS
 
 ## MODAL Z-INDEX ISSUES
