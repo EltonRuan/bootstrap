@@ -2937,6 +2937,44 @@ npm install bootstrap</code></pre>
 
 ## FRAMEWORK CONFLICTS
 
+
+<p>
+  When using Bootstrap alongside other frameworks or libraries, conflicts can arise that affect styling, layout, or JavaScript behavior. Identifying and managing these conflicts early can help ensure smooth integration and functionality.
+</p>
+
+<h3>CSS Conflicts</h3>
+<ul>
+  <li><strong>Global Styles:</strong> Bootstrap applies global styles (e.g., resets, box-sizing), which can override or be overridden by other frameworks like Tailwind CSS or Foundation.</li>
+  <li><strong>Utility Class Collisions:</strong> Class names like <code>.container</code>, <code>.row</code>, or <code>.btn</code> are common and might exist in other CSS frameworks, causing unexpected results.</li>
+  <li><strong>Specificity Issues:</strong> More specific selectors from other stylesheets can override Bootstrap's styles unless managed carefully with proper ordering and scoping.</li>
+</ul>
+
+<h3>JavaScript Conflicts</h3>
+<ul>
+  <li><strong>Library Interference:</strong> If multiple libraries manipulate the DOM (like jQuery, Alpine.js, or Vue), interactions with Bootstrap's JavaScript can break components like modals or tooltips.</li>
+  <li><strong>Double Initialization:</strong> Components might be initialized by two libraries at once, leading to unpredictable behavior (e.g., two modals open or stuck states).</li>
+  <li><strong>Event Handling Conflicts:</strong> Some frameworks listen or emit conflicting events, which can disrupt Bootstrap’s UI logic.</li>
+</ul>
+
+<h3>How to Avoid Conflicts</h3>
+<ul>
+  <li><strong>Namespace your styles:</strong> Use unique class names or wrap your custom styles in containers to limit overlap.</li>
+  <li><strong>Load order carefully:</strong> Always load Bootstrap CSS before custom or conflicting stylesheets, and load JavaScript libraries in the correct sequence.</li>
+  <li><strong>Use component scopes:</strong> When combining frameworks, isolate each component’s logic using <code>shadow DOM</code>, scoped styles, or different view components (e.g., Vue SFCs).</li>
+  <li><strong>Test in isolation:</strong> Before integrating with other frameworks, test each Bootstrap component independently.</li>
+</ul>
+
+<h3>Frameworks Known to Conflict with Bootstrap</h3>
+<ul>
+  <li><strong>Tailwind CSS:</strong> Utility classes overlap; requires careful ordering or using Tailwind’s prefixing system.</li>
+  <li><strong>Material UI / Foundation:</strong> Similar class and component names; keep their scopes separated.</li>
+  <li><strong>jQuery UI:</strong> May conflict with Bootstrap’s use of jQuery in older versions.</li>
+</ul>
+
+<p>
+  Managing framework conflicts requires planning and structure. Understand the strengths and structure of each framework and ensure they are not stepping on each other's toes in your project.
+</p>
+
 ## MODAL Z-INDEX ISSUES
 
 ## LAYOUT BREAKS ON SMALL SCREENS
