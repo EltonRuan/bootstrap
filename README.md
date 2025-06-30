@@ -2977,6 +2977,32 @@ npm install bootstrap</code></pre>
 
 ## MODAL Z-INDEX ISSUES
 
+<p>
+  One of the most common layout bugs when working with Bootstrap modals is related to <strong>z-index stacking</strong>. Modals may appear behind other elements, be partially hidden, or fail to display correctly. These issues are usually caused by conflicting z-index values in your layout or improperly positioned elements.
+</p>
+
+<h3>Common Causes</h3>
+<ul>
+  <li><strong>Custom Styles:</strong> Other elements (like headers, sidebars, or overlays) with high <code>z-index</code> may overlap the modal unintentionally.</li>
+  <li><strong>Nested Positioning:</strong> Modals placed inside relatively positioned elements can inherit stacking contexts that limit their visibility.</li>
+  <li><strong>Missing Backdrop:</strong> If the modal backdrop is not rendered or has a lower <code>z-index</code>, it can affect the layering of the modal itself.</li>
+</ul>
+
+<h3>Solutions</h3>
+<ul>
+  <li>Ensure the modal is placed outside of elements with <code>position: relative</code> or <code>z-index</code> manipulation.</li>
+  <li>Use the default Bootstrap structure — place the modal component directly in the <code>&lt;body&gt;</code> tag.</li>
+  <li>Inspect with DevTools and compare z-index values of overlapping elements.</li>
+  <li>If needed, override Bootstrap’s default modal z-index (e.g., <code>z-index: 1055</code>) using custom CSS with care:</li>
+</ul>
+
+.modal {
+  z-index: 9999 !important;
+}
+.modal-backdrop {
+  z-index: 9998 !important;
+}
+
 ## LAYOUT BREAKS ON SMALL SCREENS
 
 ## FINAL CONSIDERATIONS
