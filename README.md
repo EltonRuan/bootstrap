@@ -3005,6 +3005,35 @@ npm install bootstrap</code></pre>
 
 ## LAYOUT BREAKS ON SMALL SCREENS
 
+<p>
+  One of the most common issues in responsive design is when layouts break or look unorganized on smaller screens, such as smartphones. This usually happens due to improper use of Bootstrap’s grid system, fixed widths, or non-responsive components.
+</p>
+
+<h3>Common Causes</h3>
+<ul>
+  <li><strong>Missing responsive classes:</strong> Forgetting to use responsive grid classes like <code>.col-sm-</code>, <code>.col-md-</code>, etc.</li>
+  <li><strong>Fixed widths or heights:</strong> Using hardcoded <code>px</code> values instead of relative units like <code>%</code>, <code>vh</code>, or <code>vw</code>.</li>
+  <li><strong>Overflowing content:</strong> Images, long text strings, or tables that don't adjust to smaller screens.</li>
+  <li><strong>Improper nesting:</strong> Placing columns outside of a <code>.row</code> or placing rows outside of a <code>.container</code>.</li>
+</ul>
+
+<h3>Solutions</h3>
+<ul>
+  <li>Always use the Bootstrap grid correctly: <code>.container</code> → <code>.row</code> → <code>.col-*</code>.</li>
+  <li>Use fluid layouts with <code>container-fluid</code> when needed.</li>
+  <li>Make use of utility classes like <code>.img-fluid</code>, <code>.text-wrap</code>, <code>.table-responsive</code>, and responsive padding/margin helpers.</li>
+  <li>Test your layout on different screen sizes using browser dev tools (Device Mode).</li>
+</ul>
+
+<h3>Best Practices</h3>
+<ul>
+  <li>Follow the mobile-first principle: start designing for smaller screens first, then expand for larger ones.</li>
+  <li>Use relative sizing units like <code>em</code>, <code>rem</code>, <code>%</code> to improve flexibility.</li>
+  <li>Don't forget to set the viewport meta tag in your HTML:</li>
+</ul>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 ## FINAL CONSIDERATIONS
 
 <footer align="center"> <img style="width:100%" src="https://capsule-render.vercel.app/api?type=soft&height=20&color=FFFFFF&fontSize=50&fontAlign=50&strokeWidth=0&descAlignY=80&stroke=000000&reversal=false&section=footer"> </footer>
