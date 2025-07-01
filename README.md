@@ -3029,10 +3029,8 @@ npm install bootstrap</code></pre>
 <ul>
   <li>Follow the mobile-first principle: start designing for smaller screens first, then expand for larger ones.</li>
   <li>Use relative sizing units like <code>em</code>, <code>rem</code>, <code>%</code> to improve flexibility.</li>
-  <li>Don't forget to set the viewport meta tag in your HTML:</li>
+  <li>Don't forget to set the viewport meta tag in your HTML.</li>
 </ul>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 ## FINAL CONSIDERATIONS
 
