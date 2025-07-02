@@ -3034,4 +3034,19 @@ npm install bootstrap</code></pre>
 
 ## FINAL CONSIDERATIONS
 
+<p>
+  This documentation was created to summarize and organize the key concepts of the Bootstrap framework. Inspired by the official <a href="https://getbootstrap.com/" target="_blank">Bootstrap documentation</a>, its main goal is to provide a more accessible and centralized reference for study, quick consultation, and real-world application.
+</p>
+
+<p>
+  Whether you are just beginning your journey in frontend development or reinforcing your knowledge, this guide aims to simplify your learning experience by offering structured content, practical examples, and clear explanations.
+</p>
+
+<p>
+  Feel free to use this material to boost your productivity, improve your understanding of responsive design, and accelerate your workflow with one of the most popular CSS frameworks in the world.
+</p>
+
+<br><br>
+<p><strong>© 2025 EltonRuan. All rights reserved.</strong></p>
+
 <footer align="center"> <img style="width:100%" src="https://capsule-render.vercel.app/api?type=soft&height=20&color=FFFFFF&fontSize=50&fontAlign=50&strokeWidth=0&descAlignY=80&stroke=000000&reversal=false&section=footer"> </footer>
